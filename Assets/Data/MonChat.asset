@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
+  m_Name: MonChat
+  m_EditorClassIdentifier: 
+  nom: 
+  pseudo: 
+  portait: {fileID: 0}
+  age: 0
+  race: {fileID: 11400000, guid: 6371a11b41cc9914ba6fe4853f8b0cb3, type: 2}
+  lignee: 
+  reputation: 0
+  faction: 
+  qualites: []
+  defaults: []
+  griffe: 1
+  poil: 1
+  oeil: 1
+  queue: 1
+  caresse: 1
+  ronronnement: 1
+  cousinet: 1
+  vibrisse: 1
+  chance: 1
