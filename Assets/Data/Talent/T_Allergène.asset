@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: "T_Allerg\xE8ne"
+  m_EditorClassIdentifier: 
+  nom: "Allerg\xE8ne"
+  description: " Les humains sont affect\xE9s dans un rayon de (5 \xD7 rangs) m\xE8tres 
+    centr\xE9 sur le chat activant son talent. Ils subissent alors un malus  de -(rang)
+    \xE0 toutes leurs actions durant (5 \xD7 rang) minutes. La zone  d\u2019effet
+    se d\xE9place avec le chat durant toute sa dur\xE9e effective."
+  rang: 0

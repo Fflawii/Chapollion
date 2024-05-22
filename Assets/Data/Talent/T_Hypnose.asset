@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: Talent
+  m_Name: T_Hypnose
   m_EditorClassIdentifier: 
-  nom: Allergene
-  description: 
+  nom: Hypnose
+  description: "Le personnage peut effacer les (5 \xD7 rangs) derni\xE8res minutes
+    de la m\xE9moire d\u2019un \xEAtre humain, ou bien implanter un faux souvenir
+    remontant \xE0 (rangs) jour(s)."
   rang: 0
