@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Q_Don Juan
   gainPerte: -8
-  effet: {fileID: 0}
-  nom: Don Juan
+  effet: {fileID: 11400000, guid: f07bb7eb1e1cb44fd84cf8fadc974c7d, type: 2}
+  nom: Q_Don Juan

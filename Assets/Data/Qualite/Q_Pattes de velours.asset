@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Q_Pattes de velours
   gainPerte: -6
-  effet: {fileID: 0}
-  nom: Pattes de velours
+  effet: {fileID: 11400000, guid: 4f04e5d61a97b4a2aa73df9706156a58, type: 2}
+  nom: Q_Pattes de velours

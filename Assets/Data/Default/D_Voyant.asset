@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Voyant
   gainPerte: 2
-  effet: {fileID: 0}
-  nom: Voyant
+  effet: {fileID: 11400000, guid: 75cbb5de0f18f4815a6284e00d48cb3b, type: 2}

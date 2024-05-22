@@ -12,7 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   nom: ' Meou  Iou'
+=======
+<<<<<<< Updated upstream
+  nom: ' Maou  Mrr'
+=======
+  nom: b c
+>>>>>>> Stashed changes
+>>>>>>> 34086a977013457b4a2b97af00807fff8850af5f
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -20,7 +28,15 @@ MonoBehaviour:
   portrait: {fileID: 0}
   age: 7
   race: {fileID: 0}
+<<<<<<< HEAD
   lignee: Longue  L_Queue
+=======
+<<<<<<< Updated upstream
+  lignee: L_Tete Ronde
+=======
+  lignee: L_Queue Touffue
+>>>>>>> Stashed changes
+>>>>>>> 34086a977013457b4a2b97af00807fff8850af5f
   reputation: 0
   faction: {fileID: 0}
   qualites: []

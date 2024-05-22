@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: "Q_Athl\xE8te"
   gainPerte: -8
-  effet: {fileID: 0}
-  nom: "Athl\xE8te"
+  effet: {fileID: 11400000, guid: a73fb332fc30144378ae8e14a665b109, type: 2}
+  nom: "Q_Athl\xE8te"
