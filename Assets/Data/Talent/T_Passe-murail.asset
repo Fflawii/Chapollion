@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: T_Passe-murail
+  m_EditorClassIdentifier: 
+  nom: Passe-murail
+  description: "Le personnage peut passer au travers de n\u2019importe quelle mati\xE8re
+    de moins de (10 \xD7 rangs) centim\xE8tres d\u2019\xE9paisseur."
+  rang: 0

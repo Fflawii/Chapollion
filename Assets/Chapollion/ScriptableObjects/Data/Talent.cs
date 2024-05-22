@@ -6,7 +6,7 @@ namespace Chapollion.ScriptableObjects.Data
     public class Talent : ScriptableObject
     {
         [SerializeField] private string nom;
-        [SerializeField] private string description;
+        [SerializeField][TextArea(3, 15)] private string description;
         [Range(0, 5)] [SerializeField] private int rang;
     }
 }
