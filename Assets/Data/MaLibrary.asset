@@ -14,26 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myDice: {fileID: 11400000, guid: a1182bcd6cfd944cf9322be6b53f1242, type: 2}
   prefixNomDispo:
-  - a
-  - b
-  - b
-  - b
-  - b
-  - b
-  - b
-  - b
-  - b
+  - ' Ma'
+  - ' Gra'
+  - M
+  - ' Mra'
+  - Mi
+  - ' Maou'
+  - ' Meou'
+  - ' Ra'
+  - ' Wra'
   - 
   suffixNomDispo:
-  - c
-  - c
-  - c
-  - c
-  - c
-  - c
-  - e
-  - e
-  - e
+  - ' Waou'
+  - ' Iw'
+  - ' Ou'
+  - ' Wraou'
+  - ' Iou'
+  - ' Rou'
+  - ' Ri'
+  - ' Mrr'
+  - ' Ow'
   - 
   lignees:
   - {fileID: 11400000, guid: 25795dfa066f647c385e7e8f480dddb7, type: 2}
