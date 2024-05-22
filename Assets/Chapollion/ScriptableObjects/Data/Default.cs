@@ -1,7 +1,7 @@
 using UnityEngine;
 namespace  Chapollion.ScriptableObjects.Data
 {
-    [CreateAssetMenu(fileName="Race")]
+    [CreateAssetMenu(fileName="Default")]
 
  public class Default:Trait
     {
