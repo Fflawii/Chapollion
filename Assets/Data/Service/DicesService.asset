@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f06405abb542914ca7aa5cac4287153, type: 3}
-  m_Name: creation
+  m_Script: {fileID: 11500000, guid: caa1cc09556204be4aac3d64fe53cc39, type: 3}
+  m_Name: DicesService
   m_EditorClassIdentifier: 
-  myLibrary: {fileID: 11400000, guid: ff94127e8f818b14389015d03b9ae905, type: 2}
-  myCurrentCat: {fileID: 11400000, guid: d62f8bc470eadc941a44b26585a4fd69, type: 2}

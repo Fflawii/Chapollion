@@ -15,7 +15,7 @@ namespace  Chapollion.ScriptableObjects.Data
         [SerializeField] private Race race;
         [SerializeField] private string lignee;
         [SerializeField] private int reputation = 0;
-        [SerializeField] private string faction;
+        [SerializeField] private Faction faction;
 
         [SerializeField] private List<Qualite> qualites = new();
         [SerializeField] private List<Default> defauts = new();
@@ -52,7 +52,7 @@ namespace  Chapollion.ScriptableObjects.Data
             race = null;
             lignee = aLignee;
             reputation = 0;
-            faction = string.Empty;
+            faction = null;
             qualites = new List<Qualite>();
             defauts = new List<Default>();
 

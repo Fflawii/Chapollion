@@ -13,7 +13,7 @@ namespace  Chapollion.ScriptableObjects.Data
       
         private void OnEnable()
         {
-            InitCat();
+            //sInitCat();
         }
 
         [ContextMenu("Créer un nouveau chat")]

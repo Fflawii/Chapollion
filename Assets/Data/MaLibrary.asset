@@ -12,25 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ca08ff84113384cbe1e341692b61db, type: 3}
   m_Name: MaLibrary
   m_EditorClassIdentifier: 
+  myDice: {fileID: 11400000, guid: a1182bcd6cfd944cf9322be6b53f1242, type: 2}
   prefixNomDispo:
   - a
   - b
-  sufixNomDispo:
-  - d
-  - f
-  prefixLigneeDispo:
-  - Dents
-  - Crocs
-  sufixLigneeDispo:
-  - Agile
-  - Touffue
+  suffixNomDispo: []
+  lignees: []
   factionsDispo:
   - "Lib\xE9rateurs"
   qualitesDispo:
   - {fileID: 11400000, guid: e4a1828779680d442867b17a73043f38, type: 2}
-  defaultsDispo:
-  - {fileID: 11400000, guid: f8231c02f43615744ba24142d8a6d9a6, type: 2}
-  competenceDispo:
-  - {fileID: 11400000, guid: f58576859f6554d458d2cf4a162e6494, type: 2}
-  talentDispo:
-  - {fileID: 11400000, guid: 5c23689a4c4e5824e893268e16b4e801, type: 2}
+  defautsDispo: []
+  competencesDispo: []
+  talentsDispo: []
