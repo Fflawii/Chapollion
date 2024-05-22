@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b918bace097e92a4cbe23174e65c4253, type: 3}
+  m_Name: R_Siamois
+  m_EditorClassIdentifier: 
+  nom: Siamois
+  ImageRace: {fileID: 2092746028, guid: 89468f40932ca4446877b535bcd1cf2a, type: 3}
+  DefautsObligatoires:
+  - {fileID: 11400000, guid: f8231c02f43615744ba24142d8a6d9a6, type: 2}
+  - {fileID: 11400000, guid: c1513d219143e4f8497230c900d794d9, type: 2}
+  "Qualit\xE9sObligatoires":
+  - {fileID: 11400000, guid: e4a1828779680d442867b17a73043f38, type: 2}
