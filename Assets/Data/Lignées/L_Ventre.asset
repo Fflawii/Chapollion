@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 642f33a5f40aa4a74a64ddcccf762734, type: 3}
-  m_Name: 1 1
+  m_Name: L_Ventre
   m_EditorClassIdentifier: 
-  nom: 
+  nom: Ventre
   Suffixes:
-  - Nom: 
+  - Nom: Poilu
     Invert: 0
-  - Nom: 
+  - Nom: Noir
     Invert: 0
-  - Nom: 
+  - Nom: A Terre
     Invert: 0
-  - Nom: 
+  - Nom: Blanc
     Invert: 0
-  - Nom: 
+  - Nom: Gris
     Invert: 0
-  - Nom: 
-    Invert: 0
+  - Nom: Gros
+    Invert: 1

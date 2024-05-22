@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 642f33a5f40aa4a74a64ddcccf762734, type: 3}
-  m_Name: 1 4
+  m_Name: L_Cuisses
   m_EditorClassIdentifier: 
-  nom: 
+  nom: Cuisses
   Suffixes:
-  - Nom: 
+  - Nom: Fines
+    Invert: 1
+  - Nom: "Muscl\xE9es"
     Invert: 0
-  - Nom: 
+  - Nom: Larges
+    Invert: 1
+  - Nom: Poilues
     Invert: 0
-  - Nom: 
+  - Nom: Bondissantes
     Invert: 0
-  - Nom: 
-    Invert: 0
-  - Nom: 
-    Invert: 0
-  - Nom: 
-    Invert: 0
+  - Nom: Grosses
+    Invert: 1

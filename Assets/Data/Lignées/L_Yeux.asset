@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 642f33a5f40aa4a74a64ddcccf762734, type: 3}
-  m_Name: 1 2
+  m_Name: L_Yeux
   m_EditorClassIdentifier: 
-  nom: 
+  nom: L_Yeux
   Suffixes:
-  - Nom: 
+  - Nom: d'Or
     Invert: 0
-  - Nom: 
+  - Nom: "Per\xE7ants"
     Invert: 0
-  - Nom: 
+  - Nom: Rouge
     Invert: 0
-  - Nom: 
+  - Nom: "Bigarr\xE9s"
     Invert: 0
-  - Nom: 
+  - Nom: "Mena\xE7antes"
     Invert: 0
-  - Nom: 
+  - Nom: Aveugles
     Invert: 0
