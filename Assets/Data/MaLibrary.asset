@@ -16,12 +16,44 @@ MonoBehaviour:
   prefixNomDispo:
   - a
   - b
-  suffixNomDispo: []
-  lignees: []
+  - b
+  - b
+  - b
+  - b
+  - b
+  - b
+  - b
+  - b
+  suffixNomDispo:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  lignees:
+  - {fileID: 11400000, guid: 25795dfa066f647c385e7e8f480dddb7, type: 2}
+  - {fileID: 11400000, guid: f197e5752ecdc4e59b8f7aa3c3ca0d1a, type: 2}
+  - {fileID: 11400000, guid: 4ff7a97a5d0b9471d849f1ee4c8422ac, type: 2}
+  - {fileID: 11400000, guid: f5c5466b76d434403a0292d6bd96d71f, type: 2}
+  - {fileID: 11400000, guid: fad398efea4d744ec912456fa550ca1f, type: 2}
+  - {fileID: 11400000, guid: 29e22ae3cff2e460b872b40a4603408b, type: 2}
+  - {fileID: 11400000, guid: b706d832f8ec14f148e6be7a1caa29a7, type: 2}
+  - {fileID: 11400000, guid: 94fc4385a197b477285f2e9d8f625d9e, type: 2}
+  - {fileID: 11400000, guid: a8b991756c41f4be5a0f4b50a480be05, type: 2}
+  - {fileID: 11400000, guid: 93e9d2d87a7f34072a7ee5d800d0cbcc, type: 2}
+  - {fileID: 11400000, guid: 538e073a9a8f84e3a96cc1a50f535246, type: 2}
+  - {fileID: 11400000, guid: 61ab10256516647e1b2c64ea0a86083f, type: 2}
+  - {fileID: 11400000, guid: d04b9f69e2f69499c9f6ae8d928d487f, type: 2}
   factionsDispo:
-  - "Lib\xE9rateurs"
+  - {fileID: 0}
   qualitesDispo:
   - {fileID: 11400000, guid: e4a1828779680d442867b17a73043f38, type: 2}
   defautsDispo: []
   competencesDispo: []
   talentsDispo: []
+  racesDispo: []

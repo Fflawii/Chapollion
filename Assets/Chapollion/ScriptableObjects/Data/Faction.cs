@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace  Chapollion.ScriptableObjects.Data
 {
+   
     [CreateAssetMenu(fileName = "faction", menuName = "Nouvelle faction", order = 0)]
- public class Faction :ScriptableObject
+    public class Faction : NamedScriptableObject
     {
-        [SerializeField] private string Description;
-        [SerializeField] private List<Chat> Chafs=new();
+        [SerializeField][TextArea(3, 10)] private string Description;
+        [SerializeField] private List<Chat> Chefs=new();
     }
-
 }

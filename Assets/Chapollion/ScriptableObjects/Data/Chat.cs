@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace  Chapollion.ScriptableObjects.Data
 {
-    [CreateAssetMenu(fileName = "Chat", menuName = "Create Cat", order = 0)]
+   [CreateAssetMenu(fileName = "Chat", menuName = "Create Cat", order = 0)]
     public class Chat : ScriptableObject
     {
         [SerializeField] private string nom;
@@ -11,14 +11,17 @@ namespace  Chapollion.ScriptableObjects.Data
 
         [SerializeField] private Sprite portrait;
 
-        [Range(1, 30)] [SerializeField] private int age;
+        [Range(1, 20)] [SerializeField] private int age;
         [SerializeField] private Race race;
         [SerializeField] private string lignee;
         [SerializeField] private int reputation = 0;
         [SerializeField] private Faction faction;
 
+
         [SerializeField] private List<Qualite> qualites = new();
         [SerializeField] private List<Default> defauts = new();
+
+        [SerializeField] private int pointsDeCreationRestant = 1;
 
         [Header("Physique")] [Range(1, 5)] [SerializeField]
         private int griffre = 1;
@@ -26,7 +29,6 @@ namespace  Chapollion.ScriptableObjects.Data
         [Range(1, 5)] [SerializeField] private int poil = 1;
         [Range(1, 5)] [SerializeField] private int oeil = 1;
         [Range(1, 5)] [SerializeField] private int queue = 1;
-
 
         [Header("Mental")] [Range(1, 5)] [SerializeField]
         private int caresse = 1;
@@ -43,7 +45,57 @@ namespace  Chapollion.ScriptableObjects.Data
 
         [Header("Talents")] [SerializeField] private List<Talent> talents = new();
 
-        public void Init(List<Competence> defaultCompetences, string aName, string aLignee)
+
+        public int Griffre
+        {
+            get => griffre;
+            set => griffre = value;
+        }
+
+        public int Poil
+        {
+            get => poil;
+            set => poil = value;
+        }
+
+        public int Oeil
+        {
+            get => oeil;
+            set => oeil = value;
+        }
+
+        public int Queue
+        {
+            get => queue;
+            set => queue = value;
+        }
+
+        public int Caresse
+        {
+            get => caresse;
+            set => caresse = value;
+        }
+
+        public int Ronronnement
+        {
+            get => ronronnement;
+            set => ronronnement = value;
+        }
+
+        public int Coussinet
+        {
+            get => coussinet;
+            set => coussinet = value;
+        }
+
+        public int Vibrisse
+        {
+            get => vibrisse;
+            set => vibrisse = value;
+        }
+
+
+        public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int pointsDeCreation)
         {
             nom = aName;
             pseudo = string.Empty;
@@ -55,16 +107,16 @@ namespace  Chapollion.ScriptableObjects.Data
             faction = null;
             qualites = new List<Qualite>();
             defauts = new List<Default>();
+            pointsDeCreationRestant = pointsDeCreation;
+            Griffre = 1;
+            Poil = 1;
+            Oeil = 1;
+            Queue = 1;
 
-            griffre = 1;
-            poil = 1;
-            oeil = 1;
-            queue = 1;
-
-            caresse = 1;
-            ronronnement = 1;
-            coussinet = 1;
-            vibrisse = 1;
+            Caresse = 1;
+            Ronronnement = 1;
+            Coussinet = 1;
+            Vibrisse = 1;
 
             chance = 1;
 
@@ -78,20 +130,46 @@ namespace  Chapollion.ScriptableObjects.Data
 
             competences = defaultCompetences;
 #if UNITY_EDITOR
-            UnityEditor.EditorUtility.SetDirty(this);
+
             foreach (var competence in competences)
             {
                 competence.name = competence.name.Replace("(Clone)", string.Empty);
-               // competence.OnEnable();
+                //competence.OnEnable();
                 UnityEditor.AssetDatabase.AddObjectToAsset(competence, this);
                 UnityEditor.EditorUtility.SetDirty(competence);
-             
             }
 
+            UnityEditor.EditorUtility.SetDirty(this);
+
             // Save all changes to disk
-           // UnityEditor.AssetDatabase.SaveAssets();
+            // UnityEditor.AssetDatabase.SaveAssets();
 #endif
             talents = new List<Talent>();
+        }
+
+        public int GetCharacteristique(Charactéristique cara)
+        {
+            switch (cara)
+            {
+                case Charactéristique.Griffe:
+                    return Griffre;
+                case Charactéristique.Poil:
+                    return Poil;
+                case Charactéristique.Oeil:
+                    return Oeil;
+                case Charactéristique.Queue:
+                    return Queue;
+                case Charactéristique.Caresse:
+                    return Caresse;
+                case Charactéristique.Ronronnement:
+                    return Ronronnement;
+                case Charactéristique.Coussinet:
+                    return Coussinet;
+                case Charactéristique.Vibrisse:
+                    return Vibrisse;
+            }
+
+            return 0;
         }
     }
 }

@@ -3,7 +3,7 @@ namespace  Chapollion.ScriptableObjects.Data
 {
     [CreateAssetMenu(fileName="Race")]
 
- public class Default:ScriptableObject
+ public class Default:Trait
     {
         [SerializeField] private string nom;
     }

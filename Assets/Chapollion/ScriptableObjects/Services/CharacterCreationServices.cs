@@ -6,21 +6,21 @@ namespace  Chapollion.ScriptableObjects.Data
 {
     [CreateAssetMenu(fileName="creation ", menuName="Service/Character creation  service", order=0)]
 
-    public class CharacterCreationService : ScriptableObject
+   public class CharacterCreationService : ScriptableObject
     {
         [SerializeField] private Library myLibrary;
         [SerializeField] private Chat myCurrentCat;
-      
+        [Range(20, 28)] [SerializeField] private int _pointsCreationIntialChat;
         private void OnEnable()
         {
-            //sInitCat();
+            InitCat();
         }
 
         [ContextMenu("Créer un nouveau chat")]
         private void InitCat()
         {
     
-            myCurrentCat.Init(myLibrary.GetDefaultCompetencesCopy(),GenerateName(),GenerateLignee());
+            myCurrentCat.Init(myLibrary.GetDefaultCompetencesCopy(),GenerateName(),GenerateLignee(),_pointsCreationIntialChat);
         }
 
         private string GenerateLignee()

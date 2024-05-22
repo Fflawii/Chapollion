@@ -1,7 +1,7 @@
 using UnityEngine;
 namespace  Chapollion.ScriptableObjects.Data
 {
-    [CreateAssetMenu(fileName="Race")]
+    [CreateAssetMenu(fileName="Competence")]
 
  public class Competence:ScriptableObject
     {

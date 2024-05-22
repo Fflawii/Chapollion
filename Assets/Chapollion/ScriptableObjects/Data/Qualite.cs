@@ -1,9 +1,9 @@
 using UnityEngine;
 namespace  Chapollion.ScriptableObjects.Data
 {
-    [CreateAssetMenu(fileName="Race")]
+    [CreateAssetMenu(fileName="Qualite")]
 
- public class Qualite:ScriptableObject
+ public class Qualite:Trait
     {
         [SerializeField] private string nom;
     }

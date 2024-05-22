@@ -5,15 +5,16 @@ using System.Collections.Generic;
 namespace  Chapollion.ScriptableObjects.Data
 {
      [CreateAssetMenu(fileName = "Game Library", menuName = "Create Game Library", order = 0)]
-    public class Library : ScriptableObject
+   public class Library : ScriptableObject
     {
         [SerializeField] private DiceResultsService myDice;
 
         [SerializeField] private List<string> prefixNomDispo = new();
         [SerializeField] private List<string> suffixNomDispo = new();
+      
         [SerializeField] private List<Lignee> lignees = new();
      
-        [SerializeField] private List<string> factionsDispo = new();
+        [SerializeField] private List<Faction> factionsDispo = new();
 
         [SerializeField] private List<Qualite> qualitesDispo = new();
         [SerializeField] private List<Default> defautsDispo = new();
@@ -21,6 +22,8 @@ namespace  Chapollion.ScriptableObjects.Data
         [SerializeField] private List<Competence> competencesDispo = new();
         [SerializeField] private List<Talent> talentsDispo = new();
 
+
+        [SerializeField] private List<Race> racesDispo = new();
         public List<Competence> GetDefaultCompetencesCopy()
         {
             var defaut = new List<Competence>();

@@ -2,7 +2,7 @@
 
 namespace Chapollion.ScriptableObjects.Data
 {
-    [CreateAssetMenu]
+    [CreateAssetMenu(fileName="Talent")]
     public class Talent : ScriptableObject
     {
         [SerializeField] private string nom;
