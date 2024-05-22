@@ -11,13 +11,13 @@ namespace  Chapollion.ScriptableObjects.Data
         [SerializeField] private Library myLibrary;
         [SerializeField] private Chat myCurrentCat;
         [Range(20, 28)] [SerializeField] private int _pointsCreationIntialChat;
-        private void OnEnable()
+        public void OnEnable()
         {
             InitCat();
         }
 
         [ContextMenu("Créer un nouveau chat")]
-        private void InitCat()
+        public void InitCat()
         {
     
             myCurrentCat.Init(myLibrary.GetDefaultCompetencesCopy(),GenerateName(),GenerateLignee(),_pointsCreationIntialChat);

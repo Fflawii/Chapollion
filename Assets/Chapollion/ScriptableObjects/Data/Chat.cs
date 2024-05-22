@@ -94,6 +94,8 @@ namespace  Chapollion.ScriptableObjects.Data
             set => vibrisse = value;
         }
 
+        
+
 
         public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int pointsDeCreation)
         {
