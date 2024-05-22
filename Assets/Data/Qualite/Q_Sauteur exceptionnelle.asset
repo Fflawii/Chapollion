@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0064d52604b1b49a7ffde837277585, type: 3}
   m_Name: Q_Sauteur exceptionnelle
   m_EditorClassIdentifier: 
-  nom: Sauteur exceptionnelle
-  gainPerte: 0
+  nom: Q_Sauteur exceptionnelle
+  gainPerte: -6
   effet: {fileID: 0}
-  nom: Athlete
+  nom: Sauteur exceptionnelle

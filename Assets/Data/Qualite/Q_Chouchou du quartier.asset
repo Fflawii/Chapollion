@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f0064d52604b1b49a7ffde837277585, type: 3}
   m_Name: Q_Chouchou du quartier
   m_EditorClassIdentifier: 
-  nom: Chouchou du quartier
-  gainPerte: 0
+  nom: Q_Chouchou du quartier
+  gainPerte: -8
   effet: {fileID: 0}
-  nom: Athlete
+  nom: Chouchou du quartier
