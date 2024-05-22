@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb1f4be4369f7343b7adf29e8a9773d, type: 3}
   m_Name: D_MeprisHumain
   m_EditorClassIdentifier: 
-  nom: Voyant
-  gainPerte: 2
+  nom: D_MeprisHumain
+  gainPerte: 4
   effet: {fileID: 0}
   nom: Voyant
