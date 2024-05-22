@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace  Chapollion.ScriptableObjects.Data
 {
@@ -7,6 +9,7 @@ namespace  Chapollion.ScriptableObjects.Data
     public class Chat : ScriptableObject
     {
         [SerializeField] private string nom;
+        public UnityEvent<string> OnCatNameChanged = new();
         [SerializeField] private string pseudo;
 
         [SerializeField] private Sprite portrait;
@@ -93,8 +96,17 @@ namespace  Chapollion.ScriptableObjects.Data
             get => vibrisse;
             set => vibrisse = value;
         }
+        public string Nom
+        {
+            get => nom;
+            set 
+            {
+                if (nom ==  value) return;
+                nom = value;
+                OnCatNameChanged.Invoke(nom);
+            }
+        }
 
-        
 
 
         public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int pointsDeCreation)

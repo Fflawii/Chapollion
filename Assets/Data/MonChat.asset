@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat
   m_EditorClassIdentifier: 
-  nom: 'b '
+  nom: b e
+  OnCatNameChanged:
+    m_PersistentCalls:
+      m_Calls: []
   pseudo: 
   portrait: {fileID: 0}
   age: 7
   race: {fileID: 0}
-  lignee: L_Ventre Noir
+  lignee: L_Pattes Silencieuses
   reputation: 0
   faction: {fileID: 0}
   qualites: []

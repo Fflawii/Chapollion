@@ -23,17 +23,17 @@ MonoBehaviour:
   - b
   - b
   - b
-  - b
+  - 
   suffixNomDispo:
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - c
+  - c
+  - c
+  - c
+  - c
+  - c
+  - e
+  - e
+  - e
   - 
   lignees:
   - {fileID: 11400000, guid: 25795dfa066f647c385e7e8f480dddb7, type: 2}
@@ -47,13 +47,26 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a8b991756c41f4be5a0f4b50a480be05, type: 2}
   - {fileID: 11400000, guid: 93e9d2d87a7f34072a7ee5d800d0cbcc, type: 2}
   - {fileID: 11400000, guid: 538e073a9a8f84e3a96cc1a50f535246, type: 2}
-  - {fileID: 11400000, guid: 61ab10256516647e1b2c64ea0a86083f, type: 2}
-  - {fileID: 11400000, guid: d04b9f69e2f69499c9f6ae8d928d487f, type: 2}
   factionsDispo:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 469b3a8aa3866e24cb0dd9a59bfa09d5, type: 2}
+  - {fileID: 11400000, guid: a2639a287a864094599ebbf7f588cc56, type: 2}
+  - {fileID: 11400000, guid: b7471527261f643fa8ea1a646c0d3b18, type: 2}
+  - {fileID: 11400000, guid: 4778cf63dee05f647ba7ff79cfc9b43b, type: 2}
+  - {fileID: 11400000, guid: 7591c89db8811524c92e592374b0792a, type: 2}
   qualitesDispo:
+  - {fileID: 11400000, guid: 7e3bd7b6e411f9b4ab91ace8663db061, type: 2}
+  - {fileID: 11400000, guid: 6ec7d579277b01044868e0dfcc05f6b0, type: 2}
   - {fileID: 11400000, guid: e4a1828779680d442867b17a73043f38, type: 2}
-  defautsDispo: []
+  - {fileID: 11400000, guid: 8ea5d4114bd85ea46bbb23c58c63f674, type: 2}
+  - {fileID: 11400000, guid: ce42875be6eda0146afd926273b5e7d1, type: 2}
+  - {fileID: 11400000, guid: 0f2d293b2b4709841b8cc979d1d5ef34, type: 2}
+  defautsDispo:
+  - {fileID: 11400000, guid: 721566206e3b44530a9ec1991e9596c5, type: 2}
+  - {fileID: 11400000, guid: 2ea21d55e84cf451c8c633b90e9861b4, type: 2}
+  - {fileID: 11400000, guid: c1513d219143e4f8497230c900d794d9, type: 2}
+  - {fileID: 11400000, guid: e13b019ce680f46e89c7795ae3515fea, type: 2}
+  - {fileID: 11400000, guid: fea18ddab72fb43abb96b97f48567b7b, type: 2}
+  - {fileID: 11400000, guid: f8231c02f43615744ba24142d8a6d9a6, type: 2}
   competencesDispo: []
   talentsDispo: []
   racesDispo: []
