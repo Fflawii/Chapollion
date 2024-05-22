@@ -4,32 +4,46 @@ using System.Collections.Generic;
 
 namespace  Chapollion.ScriptableObjects.Data
 {
-    [CreateAssetMenu(fileName="Game Library", menuName="Create Game Library", order=0)]
-
- public class Library:ScriptableObject
+     [CreateAssetMenu(fileName = "Game Library", menuName = "Create Game Library", order = 0)]
+    public class Library : ScriptableObject
     {
-        [SerializeField]private List<string> prefixNomDispo=new();
-        [SerializeField]private List<string> sufixNomDispo=new();
-        [SerializeField]private List<string> prefixLigneeDispo=new();
-        [SerializeField]private List<string> sufixLigneeDispo=new();
-        [SerializeField]private List<string> factionsDispo=new();
+        [SerializeField] private DiceResultsService myDice;
 
-        [SerializeField]private List<Qualite> qualitesDispo=new();
-        [SerializeField]private List<Default> defaultsDispo=new();
+        [SerializeField] private List<string> prefixNomDispo = new();
+        [SerializeField] private List<string> suffixNomDispo = new();
+        [SerializeField] private List<Lignee> lignees = new();
+     
+        [SerializeField] private List<string> factionsDispo = new();
 
-        [SerializeField]private List<Competence> competenceDispo=new();
-        [SerializeField]private List<Talent> talentDispo=new();
+        [SerializeField] private List<Qualite> qualitesDispo = new();
+        [SerializeField] private List<Default> defautsDispo = new();
 
-    public List<Competence> GetDefaultCompetencesCopy()
-    {
-        var default = new List<Competence>();
-        foreach (var competence in competencesDispo)
+        [SerializeField] private List<Competence> competencesDispo = new();
+        [SerializeField] private List<Talent> talentsDispo = new();
+
+        public List<Competence> GetDefaultCompetencesCopy()
         {
-            default.add(Instantiate(competence));
+            var defaut = new List<Competence>();
+            foreach (var competence in competencesDispo)
+            {
+                defaut.Add(Instantiate(competence));
+            }
+
+            return defaut;
         }
 
+        public string GenerateName()
+        {
+            return $"{prefixNomDispo[myDice.LaunchD10() - 1]} {suffixNomDispo[myDice.LaunchD10() - 1]}";
+        }
+        
+        public string GenerateLignee()
+        {
+            var prefix = lignees[myDice.LaunchD6(2) - 2];
+            var suffix = prefix.Suffixes[myDice.LaunchD6() - 1];
+            if (suffix.Invert)
+                return $"{suffix.Nom}  {prefix.Nom}";
+            return $"{prefix.Nom} {suffix.Nom}";
+        }
     }
-
-    }
-
 }
