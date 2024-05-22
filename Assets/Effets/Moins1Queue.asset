@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bb1f4be4369f7343b7adf29e8a9773d, type: 3}
-  m_Name: D_MeprisHumain
+  m_Script: {fileID: 11500000, guid: 43346f9eaf62943568352e9a297c54e3, type: 3}
+  m_Name: Moins1Queue
   m_EditorClassIdentifier: 
-  nom: D_MeprisHumain
-  gainPerte: 4
-  effet: {fileID: 11400000, guid: 7594850258c2f45e5bd54c1c1bf3bc99, type: 2}
+  "Charact\xE9ristiqueToAffect": 4
+  valueToApply: -1

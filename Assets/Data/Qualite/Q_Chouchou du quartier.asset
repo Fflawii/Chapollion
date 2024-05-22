@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: Q_Chouchou du quartier
   gainPerte: -8
-  effet: {fileID: 0}
-  nom: Chouchou du quartier
+  effet: {fileID: 11400000, guid: 00dcdf5483e4049cdb59a8810603416f, type: 2}
+  nom: Q_Chouchou du quartier

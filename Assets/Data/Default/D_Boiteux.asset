@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nom: D_Boiteux
   gainPerte: 4
-  effet: {fileID: 0}
-  nom: Voyant
+  effet: {fileID: 11400000, guid: c3a697a53e2da4060ad22b5e6b928b33, type: 2}

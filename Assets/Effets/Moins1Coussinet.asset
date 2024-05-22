@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: New Characteristique Modifier Effect
-  m_EditorClassIdentifier: Assembly-CSharp:Chapollion.ScriptableObjects.Data:CharacteristiqueModifierEffect
-  "Charact\xE9ristiqueToAffect": 0
-  valueToApply: 0
+  m_Script: {fileID: 11500000, guid: 43346f9eaf62943568352e9a297c54e3, type: 3}
+  m_Name: Moins1Coussinet
+  m_EditorClassIdentifier: 
+  "Charact\xE9ristiqueToAffect": 7
+  valueToApply: -1
