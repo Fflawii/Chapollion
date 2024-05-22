@@ -10,6 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f0064d52604b1b49a7ffde837277585, type: 3}
-  m_Name: Qualite
+  m_Name: "Q_Athl\xE8te"
   m_EditorClassIdentifier: 
+  nom: "Athl\xE8te"
+  gainPerte: 0
+  effet: {fileID: 0}
   nom: Athlete
