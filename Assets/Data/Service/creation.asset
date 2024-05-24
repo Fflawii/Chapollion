@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: creation
   m_EditorClassIdentifier: 
   myLibrary: {fileID: 11400000, guid: ff94127e8f818b14389015d03b9ae905, type: 2}
-  myCurrentCat: {fileID: 11400000, guid: d62f8bc470eadc941a44b26585a4fd69, type: 2}
+  myCurrentCat: {fileID: 11400000, guid: fd0ebd04b67564431a688adf43c7613a, type: 2}
+  _pointsCreationIntialChat: 0
