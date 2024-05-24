@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e706786463bf9446992c832e37586acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCat: {fileID: 11400000, guid: d62f8bc470eadc941a44b26585a4fd69, type: 2}
+  myCat: {fileID: 11400000, guid: fd0ebd04b67564431a688adf43c7613a, type: 2}
   myLib: {fileID: 11400000, guid: ff94127e8f818b14389015d03b9ae905, type: 2}
   onCatNameChanged:
     m_PersistentCalls:
