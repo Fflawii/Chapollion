@@ -7,9 +7,9 @@ namespace  Chapollion.ScriptableObjects.Data
     [CreateAssetMenu(fileName="Race")]
     public class Race:NammedScriptableObject
     {
-        [SerializeField] private Sprite ImageRace;
+         public Sprite ImageRace;
         
-        [SerializeField] private List<Default> DefautsObligatoires = new();
-        [SerializeField] private List<Qualite> QualitésObligatoires = new();
+        public List<Default> DefautsObligatoires = new();
+        public List<Qualite> QualitésObligatoires = new();
     }
 }
