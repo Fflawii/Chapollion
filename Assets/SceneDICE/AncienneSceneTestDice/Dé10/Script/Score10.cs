@@ -4,15 +4,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Score : MonoBehaviour
+public class Score10 : MonoBehaviour
 {
-    DiceRoll dice;
+   public DiceRoll dice;
 
     [SerializeField]
     TMP_Text scoreText;
     private void Awake()
     {
-        dice = FindObjectOfType<DiceRoll>();
+        //dice = FindObjectOfType<DiceRoll>();
     }
 
     private void Update()
