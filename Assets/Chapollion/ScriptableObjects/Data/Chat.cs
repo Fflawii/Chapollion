@@ -278,7 +278,7 @@ namespace Chapollion.ScriptableObjects.Data
             foreach (var competence in competences)
             {
                 competence.name = competence.name.Replace("(Clone)", string.Empty);
-                competence.OnEnable();
+                //competence.OnEnable();
                 UnityEditor.AssetDatabase.AddObjectToAsset(competence, this);
                 UnityEditor.EditorUtility.SetDirty(competence);
             }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Chapollion.ScriptableObjects.Services;
 using UnityEngine;
 
 namespace Chapollion.ScriptableObjects.Data

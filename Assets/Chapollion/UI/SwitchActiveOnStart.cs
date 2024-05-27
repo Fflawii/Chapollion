@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Koboct.UI
+namespace Chapollion.UI
 {
     public class SwitchActiveOnStart : MonoBehaviour
     {

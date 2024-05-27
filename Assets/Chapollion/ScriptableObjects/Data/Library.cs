@@ -24,6 +24,12 @@ namespace  Chapollion.ScriptableObjects.Data
 
 
         [SerializeField] private List<Race> racesDispo = new();
+
+        public List<Race> RacesDispo
+        {
+            get => racesDispo;
+            set => racesDispo = value;
+        }
         public List<Competence> GetDefaultCompetencesCopy()
         {
             var defaut = new List<Competence>();

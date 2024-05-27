@@ -1,7 +1,8 @@
-﻿using Koboct.ScriptableObjects.Services;
+﻿using System;
+using Chapollion.ScriptableObjects.Services;
 using UnityEngine;
 
-namespace Koboct.UI
+namespace Chapollions.UI
 {
     public class CharacterCreationBehavior : MonoBehaviour
     {

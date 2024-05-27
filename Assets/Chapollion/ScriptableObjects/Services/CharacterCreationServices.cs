@@ -1,8 +1,9 @@
 using UnityEngine;
+﻿using Chapollion.ScriptableObjects.Data;
 using System.Collections.Generic;
 
 
-namespace  Chapollion.ScriptableObjects.Data
+namespace  Chapollion.ScriptableObjects.Services
 {
     [CreateAssetMenu(fileName="creation ", menuName="Service/Character creation  service", order=0)]
 
@@ -28,7 +29,7 @@ namespace  Chapollion.ScriptableObjects.Data
             return myLibrary.GenerateLignee();
         }
 
-        private string GenerateName()
+        public string GenerateName()
         {
             return myLibrary.GenerateName();
         }

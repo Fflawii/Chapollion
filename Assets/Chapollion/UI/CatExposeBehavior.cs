@@ -1,8 +1,8 @@
-﻿using Koboct.ScriptableObjects.Data;
+﻿using Chapollion.ScriptableObjects.Data;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Koboct.UI
+namespace Chapollion.UI
 {
     public class CatExposeBehavior : MonoBehaviour
     {
