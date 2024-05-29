@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
   m_Name: "C_ R\xE9clamer \xE0 manger"
   m_EditorClassIdentifier: 
-  nom: " R\xE9clamer \xE0 manger"
+  nom: "C_ R\xE9clamer \xE0 manger"
   description: "Permet d\u2019obtenir de la nourriture \r\n"
   babase: 0
   rang: 0
+  CaracteristiquePrimareCalculBase: 5
+  CaracteristiqueSecondaireCalculBase: 0

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
   m_Name: "C_Rep\xE9rerTrouver"
   m_EditorClassIdentifier: 
-  nom: "Rep\xE9rerTrouver"
+  nom: "C_Rep\xE9rerTrouver"
   description: "Permet de rep\xE9rer ou trouver un objet ou une personne\r\n"
   babase: 0
   rang: 0
+  CaracteristiquePrimareCalculBase: 5
+  CaracteristiqueSecondaireCalculBase: 8

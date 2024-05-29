@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
   m_Name: C_ Orientation
   m_EditorClassIdentifier: 
-  nom: ' Orientation'
+  nom: C_ Orientation
   description: "Permet de s\u2019orienter dans un lieu inconnu\r\n"
   babase: 0
   rang: 0
+  CaracteristiquePrimareCalculBase: 8
+  CaracteristiqueSecondaireCalculBase: 0

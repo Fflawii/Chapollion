@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
   m_Name: C_ Langage humain
   m_EditorClassIdentifier: 
-  nom: ' Langage humain'
+  nom: C_ Langage humain
   description: "Permet \xE0 un chat de comprendre le langage parl\xE9\r\n"
   babase: 0
   rang: 0
+  CaracteristiquePrimareCalculBase: 6
+  CaracteristiqueSecondaireCalculBase: 0

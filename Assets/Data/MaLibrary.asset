@@ -67,6 +67,29 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e13b019ce680f46e89c7795ae3515fea, type: 2}
   - {fileID: 11400000, guid: fea18ddab72fb43abb96b97f48567b7b, type: 2}
   - {fileID: 11400000, guid: f8231c02f43615744ba24142d8a6d9a6, type: 2}
-  competencesDispo: []
-  talentsDispo: []
-  racesDispo: []
+  competencesDispo:
+  - {fileID: 11400000, guid: d2d9112af01333e478af72f9816ecdcd, type: 2}
+  - {fileID: 11400000, guid: 086b731fd4ffb784d81f2b033f854bf1, type: 2}
+  - {fileID: 11400000, guid: 22d0676b32d0b95488cc0701cf987d4a, type: 2}
+  - {fileID: 11400000, guid: 86f182e411ed1204eabdbaa1555a0b76, type: 2}
+  - {fileID: 11400000, guid: a8c11f0241e54496492f8feba90206cf, type: 2}
+  - {fileID: 11400000, guid: be0114f924d27294982e074564b3498c, type: 2}
+  - {fileID: 11400000, guid: eb7c76c75884d9b45989df634db77048, type: 2}
+  - {fileID: 11400000, guid: 6d998e777abcc854aac23a18b24c7439, type: 2}
+  talentsDispo:
+  - {fileID: 11400000, guid: 5c23689a4c4e5824e893268e16b4e801, type: 2}
+  - {fileID: 11400000, guid: 7de3a8d67080e224981dd10aa2cc9d3a, type: 2}
+  - {fileID: 11400000, guid: 6788066621aa0374f9dc3fe42c30de06, type: 2}
+  - {fileID: 11400000, guid: 6cef0f1bd7f2d184791168b24a2fb761, type: 2}
+  - {fileID: 11400000, guid: 634e6c7a0b4f69f4db77ee1cd362d041, type: 2}
+  - {fileID: 11400000, guid: 3bc6d7eaa4850c34d8352a0ddb9c05e6, type: 2}
+  - {fileID: 11400000, guid: 681e1ed1c547b0645b9f2eb4649b7f5f, type: 2}
+  - {fileID: 11400000, guid: 8ccd49e07cfe89a4382651041a97b54b, type: 2}
+  - {fileID: 11400000, guid: 968abf2c56fab2c4499c0e7f099e964d, type: 2}
+  racesDispo:
+  - {fileID: 11400000, guid: 44c21c9b59218c840b30336921c59a21, type: 2}
+  - {fileID: 11400000, guid: 791dd04ad310b9a41b07a6c8545f3858, type: 2}
+  - {fileID: 11400000, guid: 45973446b0dc4604f9e16902d4711e97, type: 2}
+  - {fileID: 11400000, guid: 6371a11b41cc9914ba6fe4853f8b0cb3, type: 2}
+  - {fileID: 11400000, guid: 1f49294118e3b5342a03b5b2a7de33c2, type: 2}
+  - {fileID: 11400000, guid: 5470a00dfe85deb4a8bd662cef8def38, type: 2}

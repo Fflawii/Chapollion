@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
   m_Name: "C_D\xE9guisement"
   m_EditorClassIdentifier: 
-  nom: " D\xE9guisement"
+  nom: "C_D\xE9guisement"
   description: 'Permet de modifier son apparence
 
 '
   babase: 0
   rang: 0
+  CaracteristiquePrimareCalculBase: 3
+  CaracteristiqueSecondaireCalculBase: 0

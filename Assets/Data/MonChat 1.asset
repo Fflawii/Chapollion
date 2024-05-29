@@ -1,5 +1,90 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6725533375413326371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: C_Utiliser un objet humain
+  m_EditorClassIdentifier: 
+  nom: C_Utiliser un objet humain
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 3
+  CaracteristiqueSecondaireCalculBase: 0
+--- !u!114 &-5578495137904500315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: C_ Langage humain
+  m_EditorClassIdentifier: 
+  nom: C_ Langage humain
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 6
+  CaracteristiqueSecondaireCalculBase: 0
+--- !u!114 &-4901733857566301100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: "C_ R\xE9clamer \xE0 manger"
+  m_EditorClassIdentifier: 
+  nom: "C_ R\xE9clamer \xE0 manger"
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 5
+  CaracteristiqueSecondaireCalculBase: 0
+--- !u!114 &-56238444856014189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: "C_D\xE9guisement"
+  m_EditorClassIdentifier: 
+  nom: "C_D\xE9guisement"
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 3
+  CaracteristiqueSecondaireCalculBase: 0
+--- !u!114 &-55745883959201792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: "C_Discr\xE9tion"
+  m_EditorClassIdentifier: 
+  nom: "C_Discr\xE9tion"
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 4
+  CaracteristiqueSecondaireCalculBase: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat 1
   m_EditorClassIdentifier: 
-  nom: ' Wra  Ri'
+  nom: Mi  Iw
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -20,7 +105,7 @@ MonoBehaviour:
   portrait: {fileID: 0}
   age: 7
   race: {fileID: 0}
-  lignee: "L_Queue Tigr\xE9e"
+  lignee: "L_Cou Tigr\xE9"
   OnCatLigneeChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -29,11 +114,11 @@ MonoBehaviour:
   qualites: []
   defauts: []
   pointsDeCreation: 28
-  pointsDeCreationRestant: 8
+  pointsDeCreationRestant: 19
   OnPointsDeCreationRestantChanged:
     m_PersistentCalls:
       m_Calls: []
-  pointsDeCompetence: 24
+  pointsDeCompetence: 6
   pointsDeCompetencenRestant: 17
   OnPointsDeCompetenceChanged:
     m_PersistentCalls:
@@ -42,10 +127,69 @@ MonoBehaviour:
   poil: 1
   oeil: 1
   queue: 1
-  caresse: 4
-  ronronnement: 4
-  coussinet: 4
+  caresse: 1
+  ronronnement: 1
+  coussinet: 1
   vibrisse: 1
-  chance: 3
-  competences: []
+  chance: 1
+  competences:
+  - {fileID: -5578495137904500315}
+  - {fileID: 7251140281878327644}
+  - {fileID: -4901733857566301100}
+  - {fileID: 863496748582987956}
+  - {fileID: -55745883959201792}
+  - {fileID: -56238444856014189}
+  - {fileID: 973362287738640621}
+  - {fileID: -6725533375413326371}
   talents: []
+--- !u!114 &863496748582987956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: C_ Survie
+  m_EditorClassIdentifier: 
+  nom: C_ Survie
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 6
+  CaracteristiqueSecondaireCalculBase: 8
+--- !u!114 &973362287738640621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: "C_Rep\xE9rerTrouver"
+  m_EditorClassIdentifier: 
+  nom: "C_Rep\xE9rerTrouver"
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 5
+  CaracteristiqueSecondaireCalculBase: 8
+--- !u!114 &7251140281878327644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: C_ Orientation
+  m_EditorClassIdentifier: 
+  nom: C_ Orientation
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 8
+  CaracteristiqueSecondaireCalculBase: 0

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
   m_Name: C_ Survie
   m_EditorClassIdentifier: 
-  nom: ' Survie'
+  nom: C_ Survie
   description: "Permet de trouver l\u2019essentiel dans un lieu hostile\r\n"
   babase: 0
   rang: 0
+  CaracteristiquePrimareCalculBase: 6
+  CaracteristiqueSecondaireCalculBase: 8

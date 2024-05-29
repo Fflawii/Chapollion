@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
   m_Name: "C_Discr\xE9tion"
   m_EditorClassIdentifier: 
-  nom: "Discr\xE9tion"
+  nom: "C_Discr\xE9tion"
   description: " Permet de passer inaper\xE7u"
   babase: 0
   rang: 0
+  CaracteristiquePrimareCalculBase: 4
+  CaracteristiqueSecondaireCalculBase: 0

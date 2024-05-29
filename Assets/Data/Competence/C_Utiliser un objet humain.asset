@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
   m_Name: C_Utiliser un objet humain
   m_EditorClassIdentifier: 
-  nom: Utiliser un objet humain
+  nom: C_Utiliser un objet humain
   description: "permet d\u2019utiliser un objet manufactur\xE9\r\n"
   babase: 0
   rang: 0
+  CaracteristiquePrimareCalculBase: 3
+  CaracteristiqueSecondaireCalculBase: 0

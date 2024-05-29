@@ -5,25 +5,30 @@ namespace  Chapollion.ScriptableObjects.Data
 
  public class Competence:NamedScriptableObject
     {
-        [SerializeField][TextArea(3, 15)] private string description;
-        [Range(0,5)] [SerializeField] private int babase;
-        [Range(0,5)] [SerializeField] private int rang;
-
+        [Range(0, 5)][SerializeField] private int _base;
+        [Range(0, 5)][SerializeField] private int rang;
         [SerializeField] private Charactéristique CaracteristiquePrimareCalculBase;
         [SerializeField] private Charactéristique CaracteristiqueSecondaireCalculBase;
 
-         public void CalulPointDeBase(Chat chat)
+        public void CalulPointDeBase(Chat chat)
         {
-            int result = chat.GetCharacteristique(CaracteristiquePrimareCalculBase);
+            int primaryValue = chat.GetCharacteristique(CaracteristiquePrimareCalculBase);
+
             if (CaracteristiqueSecondaireCalculBase == Charactéristique.Aucune)
             {
-                babase = result;
-                return;
+                _base = primaryValue;
             }
+            else
+            {
+                int secondaryValue = chat.GetCharacteristique(CaracteristiqueSecondaireCalculBase);
+                _base = Mathf.RoundToInt((primaryValue + secondaryValue) / 2.0f);
+            }
+        }
 
-            result += chat.GetCharacteristique(CaracteristiqueSecondaireCalculBase);
-            babase = Mathf.RoundToInt(result / 2.0f);
+        public void Initialize(Charactéristique primary, Charactéristique secondary)
+        {
+            CaracteristiquePrimareCalculBase = primary;
+            CaracteristiqueSecondaireCalculBase = secondary;
         }
     }
-
 }

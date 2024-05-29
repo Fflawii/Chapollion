@@ -65,7 +65,7 @@ namespace Chapollion.ScriptableObjects.Data
 
         public void CalculatePointsDeCompetence()
         {
-            pointsDeCompetence = (Ronronnement + caresse) * 3;
+            pointsDeCompetence = (Ronronnement + Caresse) * 3;
             Debug.Log( "1 " + pointsDeCompetence);
             if (Race != null)
             {
@@ -272,24 +272,35 @@ namespace Chapollion.ScriptableObjects.Data
             }
 #endif
 
-            competences = defaultCompetences;
+            competences = new List<Competence>();
 #if UNITY_EDITOR
-
-            foreach (var competence in competences)
+            foreach (var competence in defaultCompetences)
             {
-                competence.name = competence.name.Replace("(Clone)", string.Empty);
-                competence.OnEnable();
-                UnityEditor.AssetDatabase.AddObjectToAsset(competence, this);
-                UnityEditor.EditorUtility.SetDirty(competence);
+                var newCompetence = Instantiate(competence);
+                newCompetence.name = competence.name.Replace("(Clone)", string.Empty);
+                competences.Add(newCompetence);
+                newCompetence.OnEnable();
+                UnityEditor.AssetDatabase.AddObjectToAsset(newCompetence, this);
+                UnityEditor.EditorUtility.SetDirty(newCompetence);
             }
 
             UnityEditor.EditorUtility.SetDirty(this);
-
             // Save all changes to disk
-            // UnityEditor.AssetDatabase.SaveAssets();
+            UnityEditor.AssetDatabase.SaveAssets();
 #endif
             talents = new List<Talent>();
+            UpdateCompetenceValues();
         }
+
+    
+
+     private void UpdateCompetenceValues()
+     {
+         foreach (var competence in competences)
+         {
+             competence.CalulPointDeBase(this);
+         }
+     }
 
         private void CalculatePointsRestants()
         {
