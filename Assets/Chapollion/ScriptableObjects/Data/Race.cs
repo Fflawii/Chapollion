@@ -5,7 +5,7 @@ using UnityEngine;
 namespace  Chapollion.ScriptableObjects.Data
 {
     [CreateAssetMenu(fileName="Race")]
-    public class Race:NammedScriptableObject
+    public class Race:NamedScriptableObject
     {
          public Sprite ImageRace;
         

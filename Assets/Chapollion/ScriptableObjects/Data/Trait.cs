@@ -1,7 +1,7 @@
 using UnityEngine;
 namespace  Chapollion.ScriptableObjects.Data
 {
-     public abstract class Trait: NammedScriptableObject
+     public abstract class Trait: NamedScriptableObject
     {
         [Range(-8,4)] public int gainPerte;
         

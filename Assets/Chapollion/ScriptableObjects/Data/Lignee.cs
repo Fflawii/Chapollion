@@ -5,7 +5,7 @@ using UnityEngine;
 namespace  Chapollion.ScriptableObjects.Data
 { 
     [CreateAssetMenu(fileName="Lignee")]
-    public class Lignee: NammedScriptableObject
+    public class Lignee: NamedScriptableObject
     {
         public List<LigneeSuffix> Suffixes=new ();
 
