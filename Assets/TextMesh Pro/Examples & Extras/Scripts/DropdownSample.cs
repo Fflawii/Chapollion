@@ -1,19 +1,16 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DropdownSample: MonoBehaviour
+public class Dropdown: MonoBehaviour
 {
-	[SerializeField]
-	private TextMeshProUGUI text = null;
+	public TextMeshProUGUI output;
+	//[SerializeField] private TMP_Text tMP_Text;
 
-	[SerializeField]
-	private TMP_Dropdown dropdownWithoutPlaceholder = null;
-
-	[SerializeField]
-	private TMP_Dropdown dropdownWithPlaceholder = null;
-
-	public void OnButtonClick()
+	void HandleInputData(int val)
 	{
-		text.text = dropdownWithPlaceholder.value > -1 ? "Selected values:\n" + dropdownWithoutPlaceholder.value + " - " + dropdownWithPlaceholder.value : "Error: Please make a selection";
+	if (val == 0) { output.text = " I love Minecraft";}
+
 	}
 }

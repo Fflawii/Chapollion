@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: R_Siamois
   m_EditorClassIdentifier: 
   nom: Siamois
-  ImageRace: {fileID: 2092746028, guid: 89468f40932ca4446877b535bcd1cf2a, type: 3}
+  ImageRace: {fileID: 2122696235, guid: 7db1a22237deab94bba42738b37b721d, type: 3}
+  MaJolieAnim: {fileID: 9100000, guid: 8c425d1f1bd6f8747a9cc0bced85c433, type: 2}
   DefautsObligatoires:
   - {fileID: 11400000, guid: f8231c02f43615744ba24142d8a6d9a6, type: 2}
   - {fileID: 11400000, guid: c1513d219143e4f8497230c900d794d9, type: 2}

@@ -23,7 +23,7 @@ namespace  Chapollion.ScriptableObjects.Data
         [SerializeField] private List<Talent> talentsDispo = new();
 
 
-        [SerializeField] private List<Race> racesDispo = new();
+        [SerializeField] public List<Race> racesDispo = new();
         public List<Competence> GetDefaultCompetencesCopy()
         {
             var defaut = new List<Competence>();
