@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: R_Ragdoll
   m_EditorClassIdentifier: 
   nom: Ragdoll
-  ImageRace: {fileID: 29325209, guid: c8f0e7e1d76fe1c409039ade1ac6c99c, type: 3}
+  ImageRace: {fileID: 1193388614, guid: db733f50b3f2f334092e5efcc17b4916, type: 3}
+  MaJolieAnim: {fileID: 9100000, guid: 289953696ec47b247a365e8a398bdd3a, type: 2}
   DefautsObligatoires: []
   "Qualit\xE9sObligatoires":
   - {fileID: 11400000, guid: 6ec7d579277b01044868e0dfcc05f6b0, type: 2}

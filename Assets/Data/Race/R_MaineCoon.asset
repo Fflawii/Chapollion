@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: R_MaineCoon
   m_EditorClassIdentifier: 
   nom: Maine Coon
-  ImageRace: {fileID: -187229847, guid: d50d7152b79da954d99d91bc22bdf2ea, type: 3}
+  ImageRace: {fileID: 29325209, guid: c8f0e7e1d76fe1c409039ade1ac6c99c, type: 3}
+  MaJolieAnim: {fileID: 9100000, guid: 13556106d62b3344daeb4b4f1ca45a91, type: 2}
   DefautsObligatoires:
   - {fileID: 11400000, guid: f8231c02f43615744ba24142d8a6d9a6, type: 2}
   "Qualit\xE9sObligatoires":
