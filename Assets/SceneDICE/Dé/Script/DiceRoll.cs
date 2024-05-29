@@ -24,7 +24,7 @@ public class DiceRoll : MonoBehaviour
     {
         if (body != null)
         {
-            if (Input.GetMouseButtonDown(0) && rollCount < maxRolls)
+            if (Input.GetKeyDown(KeyCode.Space) && rollCount < maxRolls)
             {
                 RollDice();
                 rollCount++;
