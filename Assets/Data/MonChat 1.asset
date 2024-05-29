@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat 1
   m_EditorClassIdentifier: 
-  nom: M  Wraou
+  nom: ' Wra  Ri'
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -20,7 +20,7 @@ MonoBehaviour:
   portrait: {fileID: 0}
   age: 7
   race: {fileID: 0}
-  lignee: L_Oreille Noires
+  lignee: "L_Queue Tigr\xE9e"
   OnCatLigneeChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -28,12 +28,12 @@ MonoBehaviour:
   faction: {fileID: 0}
   qualites: []
   defauts: []
-  pointsDeCreation: 0
-  pointsDeCreationRestant: -9
+  pointsDeCreation: 28
+  pointsDeCreationRestant: 8
   OnPointsDeCreationRestantChanged:
     m_PersistentCalls:
       m_Calls: []
-  pointsDeCompetence: 6
+  pointsDeCompetence: 24
   pointsDeCompetencenRestant: 17
   OnPointsDeCompetenceChanged:
     m_PersistentCalls:
@@ -42,10 +42,10 @@ MonoBehaviour:
   poil: 1
   oeil: 1
   queue: 1
-  caresse: 1
-  ronronnement: 1
-  coussinet: 1
+  caresse: 4
+  ronronnement: 4
+  coussinet: 4
   vibrisse: 1
-  chance: 1
+  chance: 3
   competences: []
   talents: []
