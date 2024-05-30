@@ -5,8 +5,8 @@ namespace Chapollion.ScriptableObjects.Data
     [CreateAssetMenu(fileName="Talent")]
     public class Talent : ScriptableObject
     {
-        [SerializeField] private string nom;
+        [SerializeField] public string nom;
         [SerializeField][TextArea(3, 15)] private string description;
-        [Range(0, 5)] [SerializeField] private int rang;
+        [Range(0, 5)] [SerializeField] public int rang;
     }
 }

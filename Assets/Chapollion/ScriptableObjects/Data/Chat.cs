@@ -32,7 +32,14 @@ namespace Chapollion.ScriptableObjects.Data
 
         [SerializeField] private int pointsDeCompetence;
         [SerializeField] public int pointsDeCompetencenRestant;
+
         public UnityEvent<int> OnPointsDeCompetenceChanged = new();
+
+        [SerializeField] private int pointsDeTalent;
+        [SerializeField] public int pointsDeTalentRestant;
+
+        public UnityEvent<int> OnPointsDeTalentChanged = new();
+        
 
         [Header("Physique")] [Range(1, 5)] [SerializeField]
         private int griffre = 1;
@@ -58,7 +65,7 @@ namespace Chapollion.ScriptableObjects.Data
         [Header("Compétences")] [SerializeField]
         public List<Competence> competences = new();
 
-        [Header("Talents")] [SerializeField] private List<Talent> talents = new();
+        [Header("Talents")] [SerializeField] public List<Talent> talents = new();
 
         private static readonly int[] PointsDepense = { 0, 1, 2, 4, 8, 16 };
 
@@ -165,6 +172,8 @@ namespace Chapollion.ScriptableObjects.Data
                 if (vibrisse == value) return;
                 vibrisse = value;
                 CalculatePointsRestants();
+                CalculateTalentsPoints();
+                
             }
         }
 
@@ -377,5 +386,28 @@ namespace Chapollion.ScriptableObjects.Data
             pointsDeCompetencenRestant += points;
             OnPointsDeCompetenceChanged.Invoke(pointsDeCompetencenRestant);
         }
+
+        public void CalculateTalentsPoints()
+        {
+            if (Vibrisse == 1){
+                pointsDeTalent = 2;
+            }
+            if (Vibrisse == 2){
+                pointsDeTalent = 4;
+            }
+            if (Vibrisse == 3){
+                pointsDeTalent = 8;
+            }
+            if (Vibrisse == 4){
+                pointsDeTalent = 16;
+            }
+            if (Vibrisse == 5){
+                pointsDeTalent = 24;
+            }
+            //pointsDeTalent = (2* Vibrisse + (Vibrisse - 1)) ;
+            Debug.Log(Vibrisse+" aaaa "+pointsDeTalent );
+            OnPointsDeTalentChanged.Invoke(pointsDeTalent);
+        }
+
     }
 }

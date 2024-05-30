@@ -14,8 +14,10 @@ namespace Chapollion.UI
         [SerializeField] private UnityEvent<string> onCatLigneeChanged = new();
         [SerializeField] private UnityEvent<string> onPointsDeCreationRestantChanged = new();
         [SerializeField] private UnityEvent<string> onPointsDeCompetencesChanged = new();
+        [SerializeField] private UnityEvent<string> onPointsDeTalentsChanged = new();
 
         [SerializeField] private TMP_Text pointsDeCompetenceRestantText; // Assurez-vous d'avoir une référence à ce texte
+        [SerializeField] private TMP_Text pointsDeTalentsRestantText;
 
         private void OnEnable()
         {
@@ -23,11 +25,20 @@ namespace Chapollion.UI
             onCatLigneeChanged.Invoke(myCat.Lignee);
             onPointsDeCreationRestantChanged.Invoke(myCat.PointsDeCreationRestant.ToString());
             onPointsDeCompetencesChanged.Invoke(myCat.pointsDeCompetencenRestant.ToString());
+            onPointsDeTalentsChanged.Invoke(myCat.pointsDeTalentRestant.ToString());
 
             myCat.OnCatNameChanged.AddListener(CatNameChanged);
             myCat.OnCatLigneeChanged.AddListener(CatLigneeChanged);
             myCat.OnPointsDeCreationRestantChanged.AddListener(PointsDeCreationChanged);
             myCat.OnPointsDeCompetenceChanged.AddListener(PointsDeCompetencesChanged);
+            myCat.OnPointsDeCompetenceChanged.AddListener(PointsDeCompetencesChanged);
+            myCat.OnPointsDeTalentChanged.AddListener(PointsDeTalentsChanged);
+        }
+
+        private void PointsDeTalentsChanged(int points)
+        {
+            onPointsDeTalentsChanged.Invoke(points.ToString());
+            pointsDeTalentsRestantText.text = points.ToString();
         }
 
         private void PointsDeCompetencesChanged(int pointsRestants)
@@ -57,6 +68,9 @@ namespace Chapollion.UI
         {
             onCatNameChanged.Invoke(aCatName);
         }
+
+        
+
 
         private void OnDisable()
         {

@@ -34,7 +34,7 @@ MonoBehaviour:
   rang: 0
   CaracteristiquePrimareCalculBase: 4
   CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &-5975640798255497949
+--- !u!114 &-8129667499482507874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,14 +44,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: "C_D\xE9guisement"
+  m_Name: C_Utiliser un objet humain
   m_EditorClassIdentifier: 
-  nom: "C_D\xE9guisement"
+  nom: C_Utiliser un objet humain
   _base: 0
   rang: 0
   CaracteristiquePrimareCalculBase: 3
   CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &-3933627357766187202
+--- !u!114 &-7031610802835426613
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,13 +61,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: "C_ R\xE9clamer \xE0 manger"
+  m_Name: "C_Discr\xE9tion"
   m_EditorClassIdentifier: 
-  nom: "C_ R\xE9clamer \xE0 manger"
-  _base: 1
+  nom: "C_Discr\xE9tion"
+  _base: 0
   rang: 0
-  CaracteristiquePrimareCalculBase: 5
+  CaracteristiquePrimareCalculBase: 4
   CaracteristiqueSecondaireCalculBase: 0
+--- !u!114 &-4387845385289936811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: C_ Survie
+  m_EditorClassIdentifier: 
+  nom: C_ Survie
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 6
+  CaracteristiqueSecondaireCalculBase: 8
 --- !u!114 &-3763258599967105332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +101,23 @@ MonoBehaviour:
   _base: 1
   rang: 0
   CaracteristiquePrimareCalculBase: 3
+  CaracteristiqueSecondaireCalculBase: 0
+--- !u!114 &-3584895956346506221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: "C_ R\xE9clamer \xE0 manger"
+  m_EditorClassIdentifier: 
+  nom: "C_ R\xE9clamer \xE0 manger"
+  _base: 1
+  rang: 0
+  CaracteristiquePrimareCalculBase: 5
   CaracteristiqueSecondaireCalculBase: 0
 --- !u!114 &-3416550989482478504
 MonoBehaviour:
@@ -119,7 +153,7 @@ MonoBehaviour:
   rang: 0
   CaracteristiquePrimareCalculBase: 5
   CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &-1931985624404398240
+--- !u!114 &-1085703948789011327
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,30 +163,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: C_ Orientation
+  m_Name: "C_Rep\xE9rerTrouver"
   m_EditorClassIdentifier: 
-  nom: C_ Orientation
-  _base: 1
-  rang: 0
-  CaracteristiquePrimareCalculBase: 8
-  CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &-201731995218515851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: "C_Discr\xE9tion"
-  m_EditorClassIdentifier: 
-  nom: "C_Discr\xE9tion"
+  nom: "C_Rep\xE9rerTrouver"
   _base: 0
   rang: 0
-  CaracteristiquePrimareCalculBase: 4
-  CaracteristiqueSecondaireCalculBase: 0
+  CaracteristiquePrimareCalculBase: 5
+  CaracteristiqueSecondaireCalculBase: 8
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat 1
   m_EditorClassIdentifier: 
-  nom: ' Gra  Iw'
+  nom: ' Wra  Ou'
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -173,7 +190,7 @@ MonoBehaviour:
   portrait: {fileID: 0}
   age: 7
   race: {fileID: 0}
-  lignee: Longue  L_Queue
+  lignee: L_Pattes Silencieuses
   OnCatLigneeChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -191,6 +208,11 @@ MonoBehaviour:
   OnPointsDeCompetenceChanged:
     m_PersistentCalls:
       m_Calls: []
+  pointsDeTalent: 2
+  pointsDeTalentRestant: 17
+  OnPointsDeTalentChanged:
+    m_PersistentCalls:
+      m_Calls: []
   griffre: 1
   poil: 1
   oeil: 1
@@ -201,14 +223,14 @@ MonoBehaviour:
   vibrisse: 1
   chance: 1
   competences:
-  - {fileID: 1737063061268302179}
-  - {fileID: -1931985624404398240}
-  - {fileID: -3933627357766187202}
-  - {fileID: 5018545233595557659}
-  - {fileID: -201731995218515851}
-  - {fileID: -5975640798255497949}
-  - {fileID: 7598777185586859129}
-  - {fileID: 4882504862232916671}
+  - {fileID: 3097419519386966524}
+  - {fileID: 527871098858083636}
+  - {fileID: -3584895956346506221}
+  - {fileID: -4387845385289936811}
+  - {fileID: -7031610802835426613}
+  - {fileID: 1659504468706874493}
+  - {fileID: -1085703948789011327}
+  - {fileID: -8129667499482507874}
   talents: []
 --- !u!114 &520819633799223760
 MonoBehaviour:
@@ -227,6 +249,23 @@ MonoBehaviour:
   rang: 0
   CaracteristiquePrimareCalculBase: 6
   CaracteristiqueSecondaireCalculBase: 8
+--- !u!114 &527871098858083636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: C_ Orientation
+  m_EditorClassIdentifier: 
+  nom: C_ Orientation
+  _base: 1
+  rang: 0
+  CaracteristiquePrimareCalculBase: 8
+  CaracteristiqueSecondaireCalculBase: 0
 --- !u!114 &754824492476627035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,7 +300,7 @@ MonoBehaviour:
   rang: 0
   CaracteristiquePrimareCalculBase: 6
   CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &1737063061268302179
+--- !u!114 &1659504468706874493
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -271,12 +310,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: C_ Langage humain
+  m_Name: "C_D\xE9guisement"
   m_EditorClassIdentifier: 
-  nom: C_ Langage humain
-  _base: 1
+  nom: "C_D\xE9guisement"
+  _base: 0
   rang: 0
-  CaracteristiquePrimareCalculBase: 6
+  CaracteristiquePrimareCalculBase: 3
   CaracteristiqueSecondaireCalculBase: 0
 --- !u!114 &2697237131179915729
 MonoBehaviour:
@@ -295,7 +334,7 @@ MonoBehaviour:
   rang: 0
   CaracteristiquePrimareCalculBase: 4
   CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &4882504862232916671
+--- !u!114 &3097419519386966524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -305,12 +344,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: C_Utiliser un objet humain
+  m_Name: C_ Langage humain
   m_EditorClassIdentifier: 
-  nom: C_Utiliser un objet humain
-  _base: 0
+  nom: C_ Langage humain
+  _base: 1
   rang: 0
-  CaracteristiquePrimareCalculBase: 3
+  CaracteristiquePrimareCalculBase: 6
   CaracteristiqueSecondaireCalculBase: 0
 --- !u!114 &4932656840730186161
 MonoBehaviour:
@@ -328,23 +367,6 @@ MonoBehaviour:
   _base: 1
   rang: 0
   CaracteristiquePrimareCalculBase: 5
-  CaracteristiqueSecondaireCalculBase: 8
---- !u!114 &5018545233595557659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: C_ Survie
-  m_EditorClassIdentifier: 
-  nom: C_ Survie
-  _base: 0
-  rang: 0
-  CaracteristiquePrimareCalculBase: 6
   CaracteristiqueSecondaireCalculBase: 8
 --- !u!114 &5784210415635667214
 MonoBehaviour:
@@ -380,23 +402,6 @@ MonoBehaviour:
   rang: 0
   CaracteristiquePrimareCalculBase: 6
   CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &7598777185586859129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: "C_Rep\xE9rerTrouver"
-  m_EditorClassIdentifier: 
-  nom: "C_Rep\xE9rerTrouver"
-  _base: 0
-  rang: 0
-  CaracteristiquePrimareCalculBase: 5
-  CaracteristiqueSecondaireCalculBase: 8
 --- !u!114 &8334263033084550161
 MonoBehaviour:
   m_ObjectHideFlags: 0
