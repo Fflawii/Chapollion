@@ -5,10 +5,11 @@ namespace  Chapollion.ScriptableObjects.Data
 
  public class Competence:NamedScriptableObject
     {
-        [Range(0, 5)][SerializeField] private int _base;
-        [Range(0, 5)][SerializeField] private int rang;
+        [Range(0, 5)][SerializeField] public int _base;
+        [Range(0, 5)][SerializeField] public int rang;
         [SerializeField] private Charactéristique CaracteristiquePrimareCalculBase;
         [SerializeField] private Charactéristique CaracteristiqueSecondaireCalculBase;
+        
 
         public void CalulPointDeBase(Chat chat)
         {

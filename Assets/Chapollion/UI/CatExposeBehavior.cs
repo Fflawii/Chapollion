@@ -1,6 +1,7 @@
 ﻿using Chapollion.ScriptableObjects.Data;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 namespace Chapollion.UI
 {
@@ -14,26 +15,30 @@ namespace Chapollion.UI
         [SerializeField] private UnityEvent<string> onPointsDeCreationRestantChanged = new();
         [SerializeField] private UnityEvent<string> onPointsDeCompetencesChanged = new();
 
+        [SerializeField] private TMP_Text pointsDeCompetenceRestantText; // Assurez-vous d'avoir une référence à ce texte
+
         private void OnEnable()
         {
             onCatNameChanged.Invoke(myCat.Nom);
             onCatLigneeChanged.Invoke(myCat.Lignee);
             onPointsDeCreationRestantChanged.Invoke(myCat.PointsDeCreationRestant.ToString());
-            
+            onPointsDeCompetencesChanged.Invoke(myCat.pointsDeCompetencenRestant.ToString());
+
             myCat.OnCatNameChanged.AddListener(CatNameChanged);
             myCat.OnCatLigneeChanged.AddListener(CatLigneeChanged);
             myCat.OnPointsDeCreationRestantChanged.AddListener(PointsDeCreationChanged);
             myCat.OnPointsDeCompetenceChanged.AddListener(PointsDeCompetencesChanged);
         }
 
-        private void PointsDeCompetencesChanged(int arg0)
+        private void PointsDeCompetencesChanged(int pointsRestants)
         {
-            onPointsDeCompetencesChanged.Invoke(arg0.ToString());
+            onPointsDeCompetencesChanged.Invoke(pointsRestants.ToString());
+            pointsDeCompetenceRestantText.text = pointsRestants.ToString();
         }
 
-        private void PointsDeCreationChanged(int i)
+        private void PointsDeCreationChanged(int pointsRestants)
         {
-            onPointsDeCreationRestantChanged.Invoke(i.ToString());
+            onPointsDeCreationRestantChanged.Invoke(pointsRestants.ToString());
         }
 
         private void CatLigneeChanged(string aLignee)

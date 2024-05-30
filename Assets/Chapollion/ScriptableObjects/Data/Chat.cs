@@ -23,7 +23,6 @@ namespace Chapollion.ScriptableObjects.Data
         [SerializeField] private int reputation = 0;
         [SerializeField] private Faction faction;
 
-
         [SerializeField] private List<Qualite> qualites = new();
         [SerializeField] private List<Default> defauts = new();
 
@@ -32,9 +31,8 @@ namespace Chapollion.ScriptableObjects.Data
         public UnityEvent<int> OnPointsDeCreationRestantChanged = new();
 
         [SerializeField] private int pointsDeCompetence;
-        [SerializeField] private int pointsDeCompetencenRestant;
+        [SerializeField] public int pointsDeCompetencenRestant;
         public UnityEvent<int> OnPointsDeCompetenceChanged = new();
-
 
         [Header("Physique")] [Range(1, 5)] [SerializeField]
         private int griffre = 1;
@@ -44,7 +42,6 @@ namespace Chapollion.ScriptableObjects.Data
         [Range(1, 5)] [SerializeField] private int oeil = 1;
 
         [Range(1, 5)] [SerializeField] private int queue = 1;
-
 
         [Header("Mental")] [Range(1, 5)] [SerializeField]
         private int caresse = 1;
@@ -59,25 +56,15 @@ namespace Chapollion.ScriptableObjects.Data
         private int chance = 1;
 
         [Header("Compétences")] [SerializeField]
-        private List<Competence> competences = new();
+        public List<Competence> competences = new();
 
         [Header("Talents")] [SerializeField] private List<Talent> talents = new();
+
+        private static readonly int[] PointsDepense = { 0, 1, 2, 4, 8, 16 };
 
         public void CalculatePointsDeCompetence()
         {
             pointsDeCompetence = (Ronronnement + Caresse) * 3;
-            Debug.Log( "1 " + pointsDeCompetence);
-            if (Race != null)
-            {
-                if (Race.DefautsObligatoires != null)
-                    pointsDeCompetence += CalculateSommeTrait(Race.DefautsObligatoires.OfType<Trait>().ToList());
-                if (Race.QualitésObligatoires != null)
-                    pointsDeCompetence += CalculateSommeTrait(Race.QualitésObligatoires.OfType<Trait>().ToList());
-            }
-            Debug.Log( "2 " + pointsDeCompetence);
-            if (defauts != null) pointsDeCompetence += CalculateSommeTrait(defauts.OfType<Trait>().ToList());
-            if (qualites != null) pointsDeCompetence += CalculateSommeTrait(qualites.OfType<Trait>().ToList());
-            Debug.Log( "3 " + pointsDeCompetence);
             OnPointsDeCompetenceChanged.Invoke(pointsDeCompetence);
         }
 
@@ -233,10 +220,9 @@ namespace Chapollion.ScriptableObjects.Data
             set
             {
                 race = value;
-                CalculatePointsDeCompetence();
+                //CalculatePointsDeCompetence();
             }
         }
-
 
         public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int aPointsDeCreation)
         {
@@ -292,15 +278,13 @@ namespace Chapollion.ScriptableObjects.Data
             UpdateCompetenceValues();
         }
 
-    
-
-     private void UpdateCompetenceValues()
-     {
-         foreach (var competence in competences)
-         {
-             competence.CalulPointDeBase(this);
-         }
-     }
+        private void UpdateCompetenceValues()
+        {
+            foreach (var competence in competences)
+            {
+                competence.CalulPointDeBase(this);
+            }
+        }
 
         private void CalculatePointsRestants()
         {
@@ -375,8 +359,23 @@ namespace Chapollion.ScriptableObjects.Data
                     Chance = point;
                     break;
             }
+        }
 
-            CalculatePointsRestants();
+        public bool DepensePointsDeCompetence(int points)
+        {
+            if (pointsDeCompetencenRestant >= points)
+            {
+                pointsDeCompetencenRestant -= points;
+                OnPointsDeCompetenceChanged.Invoke(pointsDeCompetencenRestant);
+                return true;
+            }
+            return false;
+        }
+
+        public void RembourserPointsDeCompetence(int points)
+        {
+            pointsDeCompetencenRestant += points;
+            OnPointsDeCompetenceChanged.Invoke(pointsDeCompetencenRestant);
         }
     }
 }
