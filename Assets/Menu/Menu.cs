@@ -5,7 +5,7 @@ public class Menu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("");
+        SceneManager.LoadSceneAsync("Interface");
     }
 
     public void CreditsButton()
