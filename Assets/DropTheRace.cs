@@ -12,6 +12,7 @@ public class DropTheRace : MonoBehaviour
 {
     public Library MyLibrary;
     public TMP_Dropdown dropdown;
+    public Chat MonChat;
 
     public Animator animator;
 
@@ -20,7 +21,7 @@ public class DropTheRace : MonoBehaviour
     void Start()
     {
         dropdown.ClearOptions();
-        listrace=new List<string>();
+        listrace = new List<string>();
         foreach (var item in MyLibrary.racesDispo)
         {
             listrace.Add(item.nom);
@@ -32,6 +33,7 @@ public class DropTheRace : MonoBehaviour
 
     private void OnValueChanged(int arg0)
     {
-         animator.runtimeAnimatorController=  MyLibrary.racesDispo[arg0].MaJolieAnim;
+        animator.runtimeAnimatorController = MyLibrary.racesDispo[arg0].MaJolieAnim;
+        MonChat.Race = MyLibrary.racesDispo[arg0];
     }
 }

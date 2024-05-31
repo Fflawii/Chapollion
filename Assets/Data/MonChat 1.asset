@@ -12,15 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat 1
   m_EditorClassIdentifier: 
-  nom: ' Mra  Wraou'
+  nom: ' Ma  Iou'
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
   pseudo: 
   portrait: {fileID: 0}
   age: 7
-  race: {fileID: 0}
-  lignee: "Cou Elanc\xE9"
+  race: {fileID: 11400000, guid: 44c21c9b59218c840b30336921c59a21, type: 2}
+  OnRaceChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  lignee: "L_Cou Dress\xE9"
+  OnCatLigneeChanged:
+    m_PersistentCalls:
+      m_Calls: []
   reputation: 0
   faction: {fileID: 0}
   qualites: []
@@ -30,7 +36,7 @@ MonoBehaviour:
   OnPointsDeCreationRestantChanged:
     m_PersistentCalls:
       m_Calls: []
-  pointsDeCompetence: 6
+  pointsDeCompetence: 4
   pointsDeCompetencenRestant: 12
   OnPointsDeCompetenceChanged:
     m_PersistentCalls:

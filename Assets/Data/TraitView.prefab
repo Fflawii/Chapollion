@@ -1009,11 +1009,11 @@ MonoBehaviour:
   MyLibrary: {fileID: 11400000, guid: ff94127e8f818b14389015d03b9ae905, type: 2}
   MonChat: {fileID: 11400000, guid: fd0ebd04b67564431a688adf43c7613a, type: 2}
   IsQualite: 1
-  MyDropdown: {fileID: 0}
-  MyTraitPrefab: {fileID: 0}
-  ContentPanel: {fileID: 0}
+  MyDropdown: {fileID: 7380247246494535793}
+  MyTraitPrefab: {fileID: 2537918326958796602, guid: 22830e486a0c64310b95ef01b2c99247, type: 3}
+  ContentPanel: {fileID: 3192356257866793254}
   Instances: []
-  AddButton: {fileID: 0}
+  AddButton: {fileID: 4828091912771248182}
   MaxNBTrait: 3
   PointDeCompetences: 0
 --- !u!1 &4209741889859261890
@@ -1533,7 +1533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.00006866455}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &5670256739569803130
@@ -1656,7 +1656,7 @@ RectTransform:
   m_Father: {fileID: 8527995912420230790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2274,8 +2274,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 970325927597720113}
   m_HandleRect: {fileID: 7580156472022361392}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

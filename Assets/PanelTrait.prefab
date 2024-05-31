@@ -93,10 +93,22 @@ MonoBehaviour:
   IsMandatory: 0
   trait: {fileID: 0}
   IsQualite: 0
-  MyText: {fileID: 0}
+  MyText: {fileID: 7941608748306221384}
   IsNotMandatory:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1596032723757740480}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   MinusButton: {fileID: 7357621137365442612}
   MyCat: {fileID: 11400000, guid: fd0ebd04b67564431a688adf43c7613a, type: 2}
 --- !u!1 &1596032723757740480

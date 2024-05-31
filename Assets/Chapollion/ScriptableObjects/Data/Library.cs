@@ -14,7 +14,7 @@ namespace  Chapollion.ScriptableObjects.Data
       
         [SerializeField] private List<Lignee> lignees = new();
      
-        [SerializeField] private List<Faction> factionsDispo = new();
+        [SerializeField] public List<Faction> factionsDispo = new();
 
         [SerializeField] private List<Qualite> qualitesDispo = new();
         [SerializeField] private List<Default> defautsDispo = new();
