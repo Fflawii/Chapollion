@@ -81,7 +81,8 @@ namespace Chapollion.ScriptableObjects.Data
         public void CalculatePointsDeCompetence()
         {
             pointsDeCompetence = (Ronronnement + Caresse) * 3;
-            OnPointsDeCompetenceChanged.Invoke(pointsDeCompetence);
+            pointsDeCompetencenRestant=pointsDeCompetence;
+            OnPointsDeCompetenceChanged.Invoke(pointsDeCompetencenRestant);
         }
 
         public int CalculateSommeTrait(List<Trait> listTrait)
@@ -404,6 +405,7 @@ namespace Chapollion.ScriptableObjects.Data
                     Chance = point;
                     break;
             }
+               UpdateCompetenceValues();
         }
 
         public bool DepensePointsDeCompetence(int points)
@@ -447,7 +449,8 @@ namespace Chapollion.ScriptableObjects.Data
             }
             //pointsDeTalent = (2* Vibrisse + (Vibrisse - 1)) ;
             Debug.Log(Vibrisse + " aaaa " + pointsDeTalent);
-            OnPointsDeTalentChanged.Invoke(pointsDeTalent);
+            pointsDeTalentRestant=pointsDeTalent;
+            OnPointsDeTalentChanged.Invoke(pointsDeTalentRestant);
         }
 
     }

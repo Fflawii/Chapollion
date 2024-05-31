@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 namespace  Chapollion.ScriptableObjects.Data
 {
     [CreateAssetMenu(fileName="Competence")]
@@ -9,6 +10,8 @@ namespace  Chapollion.ScriptableObjects.Data
         [Range(0, 5)][SerializeField] public int rang;
         [SerializeField] private Charactéristique CaracteristiquePrimareCalculBase;
         [SerializeField] private Charactéristique CaracteristiqueSecondaireCalculBase;
+
+        public UnityEvent OnBaseChanged=new UnityEvent();
         
 
         public void CalulPointDeBase(Chat chat)
@@ -24,6 +27,7 @@ namespace  Chapollion.ScriptableObjects.Data
                 int secondaryValue = chat.GetCharacteristique(CaracteristiqueSecondaireCalculBase);
                 _base = Mathf.RoundToInt((primaryValue + secondaryValue) / 2.0f);
             }
+            OnBaseChanged.Invoke();
         }
 
         public void Initialize(Charactéristique primary, Charactéristique secondary)

@@ -1,123 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8963918399319915209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: C_ Survie
-  m_EditorClassIdentifier: 
-  nom: C_ Survie
-  _base: 0
-  rang: 0
-  CaracteristiquePrimareCalculBase: 6
-  CaracteristiqueSecondaireCalculBase: 8
---- !u!114 &-8924563974982208820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: T_Hypnose
-  m_EditorClassIdentifier: 
-  nom: T_Hypnose
-  description: "Le personnage peut effacer les (5 \xD7 rangs) derni\xE8res minutes
-    de la m\xE9moire d\u2019un \xEAtre humain, ou bien implanter un faux souvenir
-    remontant \xE0 (rangs) jour(s)."
-  rang: 0
---- !u!114 &-8371645838843751970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: "T_Contr\xF4le mental"
-  m_EditorClassIdentifier: 
-  nom: "T_Contr\xF4le mental"
-  description: " Le personnage peut contr\xF4ler un \xEAtre humain durant (5 \xD7
-    rang) minutes si ce dernier rate son jet de Caresse."
-  rang: 0
---- !u!114 &-7836801153493996575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: T_Passe-murail
-  m_EditorClassIdentifier: 
-  nom: T_Passe-murail
-  description: "Le personnage peut passer au travers de n\u2019importe quelle mati\xE8re
-    de moins de (10 \xD7 rangs) centim\xE8tres d\u2019\xE9paisseur."
-  rang: 0
---- !u!114 &-7044703555997069249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: T_Force
-  m_EditorClassIdentifier: 
-  nom: T_Force
-  description: "Le personnage ajoute (rangs) point de plus \xE0 son score de Griffe,
-    et \r                   t ce, durant (5 \xD7 rangs) minutes."
-  rang: 0
---- !u!114 &-3424751552491702511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: "C_D\xE9guisement"
-  m_EditorClassIdentifier: 
-  nom: "C_D\xE9guisement"
-  _base: 0
-  rang: 0
-  CaracteristiquePrimareCalculBase: 3
-  CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &-3127977125511112182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: "T_Sixi\xE8me sens"
-  m_EditorClassIdentifier: 
-  nom: "T_Sixi\xE8me sens"
-  description: "La meneuse de jeu informe le joueur d\u2019un danger potentiel et
-    ce dernier peut lui poser (rangs) questions dont les r\xE9ponses sont obligatoirement
-    \xAB\u2009Oui\u2009\xBB ou \xAB\u2009Non\u2009\xBB afin d\u2019en d\xE9terminer
-    la nature."
-  rang: 0
---- !u!114 &-2501652134682690012
+--- !u!114 &-8427396395243291763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,24 +17,10 @@ MonoBehaviour:
   rang: 0
   CaracteristiquePrimareCalculBase: 3
   CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &-1734926697753361150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: "C_Rep\xE9rerTrouver"
-  m_EditorClassIdentifier: 
-  nom: "C_Rep\xE9rerTrouver"
-  _base: 0
-  rang: 0
-  CaracteristiquePrimareCalculBase: 5
-  CaracteristiqueSecondaireCalculBase: 8
---- !u!114 &-1572515544536885721
+  OnBaseChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-7570893330426132660
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,75 +38,7 @@ MonoBehaviour:
     au rang\u202F3, toutes les\u202F15\u202Fmin au rang\u202F4 et toutes les\u202F5\u202Fmin
     au rang\u202F5."
   rang: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
-  m_Name: MonChat 1
-  m_EditorClassIdentifier: 
-  nom: ' Mra  Ow'
-  OnCatNameChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  pseudo: 
-  portrait: {fileID: 0}
-  age: 7
-  race: {fileID: 0}
-  lignee: "L_Pattes V\xE9loces"
-  OnCatLigneeChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  reputation: 0
-  faction: {fileID: 0}
-  qualites: []
-  defauts: []
-  pointsDeCreation: 28
-  pointsDeCreationRestant: 19
-  OnPointsDeCreationRestantChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  pointsDeCompetence: 6
-  pointsDeCompetencenRestant: 0
-  OnPointsDeCompetenceChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  pointsDeTalent: 2
-  pointsDeTalentRestant: 3
-  OnPointsDeTalentChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  griffre: 1
-  poil: 1
-  oeil: 1
-  queue: 1
-  caresse: 1
-  ronronnement: 1
-  coussinet: 1
-  vibrisse: 1
-  chance: 1
-  competences:
-  - {fileID: -8963918399319915209}
-  - {fileID: 2528061357679844544}
-  - {fileID: -3424751552491702511}
-  - {fileID: -1734926697753361150}
-  - {fileID: -2501652134682690012}
-  talents:
-  - {fileID: 8355379590067504531}
-  - {fileID: 2804109321726431358}
-  - {fileID: 7821337842108469744}
-  - {fileID: -8371645838843751970}
-  - {fileID: -7044703555997069249}
-  - {fileID: -8924563974982208820}
-  - {fileID: -7836801153493996575}
-  - {fileID: -1572515544536885721}
-  - {fileID: -3127977125511112182}
---- !u!114 &2528061357679844544
+--- !u!114 &-4763088661627213312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -254,23 +55,10 @@ MonoBehaviour:
   rang: 0
   CaracteristiquePrimareCalculBase: 4
   CaracteristiqueSecondaireCalculBase: 0
---- !u!114 &2804109321726431358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: T_Armure
-  m_EditorClassIdentifier: 
-  nom: T_Armure
-  description: " Le personnage r\xE9duit imm\xE9diatement tous ses niveaux de blessures
-    de (rangs) points durant (5 \xD7 rang) secondes."
-  rang: 0
---- !u!114 &7821337842108469744
+  OnBaseChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-4190271003902508433
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,7 +74,180 @@ MonoBehaviour:
   description: " Le personnage peut figer le temps sur une p\xE9riode de (5 \xD7
     rangs) secondes."
   rang: 0
---- !u!114 &8355379590067504531
+--- !u!114 &-2339009897640809613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: T_Passe-murail
+  m_EditorClassIdentifier: 
+  nom: T_Passe-murail
+  description: "Le personnage peut passer au travers de n\u2019importe quelle mati\xE8re
+    de moins de (10 \xD7 rangs) centim\xE8tres d\u2019\xE9paisseur."
+  rang: 0
+--- !u!114 &-1794402089780203798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: C_ Survie
+  m_EditorClassIdentifier: 
+  nom: C_ Survie
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 6
+  CaracteristiqueSecondaireCalculBase: 8
+  OnBaseChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-790516748980427039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: "C_Rep\xE9rerTrouver"
+  m_EditorClassIdentifier: 
+  nom: "C_Rep\xE9rerTrouver"
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 5
+  CaracteristiqueSecondaireCalculBase: 8
+  OnBaseChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
+  m_Name: MonChat 1
+  m_EditorClassIdentifier: 
+  nom: ' Ma  Iou'
+  OnCatNameChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  pseudo: 
+  portrait: {fileID: 0}
+  age: 7
+  race: {fileID: 0}
+  lignee: L_Dents d'Acier
+  OnCatLigneeChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  reputation: 0
+  faction: {fileID: 0}
+  qualites: []
+  defauts: []
+  pointsDeCreation: 28
+  pointsDeCreationRestant: 19
+  OnPointsDeCreationRestantChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  pointsDeCompetence: 6
+  pointsDeCompetencenRestant: 6
+  OnPointsDeCompetenceChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  pointsDeTalent: 2
+  pointsDeTalentRestant: 2
+  OnPointsDeTalentChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  griffre: 1
+  poil: 1
+  oeil: 1
+  queue: 1
+  caresse: 1
+  ronronnement: 1
+  coussinet: 1
+  vibrisse: 1
+  chance: 1
+  competences:
+  - {fileID: -1794402089780203798}
+  - {fileID: -4763088661627213312}
+  - {fileID: 8030225955343431234}
+  - {fileID: -790516748980427039}
+  - {fileID: -8427396395243291763}
+  talents:
+  - {fileID: 4702876529029801479}
+  - {fileID: 2145856551376314679}
+  - {fileID: -4190271003902508433}
+  - {fileID: 1884635477452168580}
+  - {fileID: 4913480744146753342}
+  - {fileID: 4151698559141187342}
+  - {fileID: -2339009897640809613}
+  - {fileID: -7570893330426132660}
+  - {fileID: 7983345256833985306}
+--- !u!114 &1884635477452168580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: "T_Contr\xF4le mental"
+  m_EditorClassIdentifier: 
+  nom: "T_Contr\xF4le mental"
+  description: " Le personnage peut contr\xF4ler un \xEAtre humain durant (5 \xD7
+    rang) minutes si ce dernier rate son jet de Caresse."
+  rang: 0
+--- !u!114 &2145856551376314679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: T_Armure
+  m_EditorClassIdentifier: 
+  nom: T_Armure
+  description: " Le personnage r\xE9duit imm\xE9diatement tous ses niveaux de blessures
+    de (rangs) points durant (5 \xD7 rang) secondes."
+  rang: 0
+--- !u!114 &4151698559141187342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: T_Hypnose
+  m_EditorClassIdentifier: 
+  nom: T_Hypnose
+  description: "Le personnage peut effacer les (5 \xD7 rangs) derni\xE8res minutes
+    de la m\xE9moire d\u2019un \xEAtre humain, ou bien implanter un faux souvenir
+    remontant \xE0 (rangs) jour(s)."
+  rang: 0
+--- !u!114 &4702876529029801479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -304,3 +265,57 @@ MonoBehaviour:
     \xE0 toutes leurs actions durant (5 \xD7 rang) minutes. La zone  d\u2019effet
     se d\xE9place avec le chat durant toute sa dur\xE9e effective."
   rang: 0
+--- !u!114 &4913480744146753342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: T_Force
+  m_EditorClassIdentifier: 
+  nom: T_Force
+  description: "Le personnage ajoute (rangs) point de plus \xE0 son score de Griffe,
+    et \r                   t ce, durant (5 \xD7 rangs) minutes."
+  rang: 0
+--- !u!114 &7983345256833985306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: "T_Sixi\xE8me sens"
+  m_EditorClassIdentifier: 
+  nom: "T_Sixi\xE8me sens"
+  description: "La meneuse de jeu informe le joueur d\u2019un danger potentiel et
+    ce dernier peut lui poser (rangs) questions dont les r\xE9ponses sont obligatoirement
+    \xAB\u2009Oui\u2009\xBB ou \xAB\u2009Non\u2009\xBB afin d\u2019en d\xE9terminer
+    la nature."
+  rang: 0
+--- !u!114 &8030225955343431234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: "C_D\xE9guisement"
+  m_EditorClassIdentifier: 
+  nom: "C_D\xE9guisement"
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 3
+  CaracteristiqueSecondaireCalculBase: 0
+  OnBaseChanged:
+    m_PersistentCalls:
+      m_Calls: []

@@ -424,7 +424,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4783071347533568047}
         m_TargetAssemblyTypeName: CompetenceLigneUI, Assembly-CSharp
-        m_MethodName: IncreaseRang
+        m_MethodName: IncreaseRangC
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -959,7 +959,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4783071347533568047}
         m_TargetAssemblyTypeName: CompetenceLigneUI, Assembly-CSharp
-        m_MethodName: DecreaseRang
+        m_MethodName: DecreaseRangC
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

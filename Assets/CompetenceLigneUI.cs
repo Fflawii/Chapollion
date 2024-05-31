@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 
 using Chapollion.ScriptableObjects.Data;
+using System;
 
 public class CompetenceLigneUI : MonoBehaviour
 {
@@ -33,7 +34,10 @@ public class CompetenceLigneUI : MonoBehaviour
         DecreaseButtonC.onClick.AddListener(DecreaseRangC);
         listenersAdded = true;
         }
+        competence.OnBaseChanged.AddListener(UpdateUI);
+
     }
+
 
     public void UpdateUI()
     {

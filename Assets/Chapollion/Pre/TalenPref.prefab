@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4477328746815387489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8477643420437977465}
+        m_TargetAssemblyTypeName: TalenLigneUI, Assembly-CSharp
+        m_MethodName: DecreaseRang
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1002955842896484728
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +617,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5605645460189256083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8477643420437977465}
+        m_TargetAssemblyTypeName: TalenLigneUI, Assembly-CSharp
+        m_MethodName: IncreaseRang
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7148982990143870931
 GameObject:
   m_ObjectHideFlags: 0
