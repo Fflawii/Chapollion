@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat 1
   m_EditorClassIdentifier: 
-  nom: ' Wra  Rou'
+  nom: ' Mra  Wraou'
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -20,7 +20,7 @@ MonoBehaviour:
   portrait: {fileID: 0}
   age: 7
   race: {fileID: 0}
-  lignee: "Cou Tachet\xE9"
+  lignee: "Cou Elanc\xE9"
   reputation: 0
   faction: {fileID: 0}
   qualites: []
