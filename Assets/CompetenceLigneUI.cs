@@ -38,6 +38,12 @@ public class CompetenceLigneUI : MonoBehaviour
 
     }
 
+    private void OnDisable()
+    {
+        IncreaseButtonC.onClick.RemoveListener(IncreaseRangC);
+        DecreaseButtonC.onClick.RemoveListener(DecreaseRangC);
+    }
+
 
     public void UpdateUI()
     {
@@ -45,6 +51,27 @@ public class CompetenceLigneUI : MonoBehaviour
         MyCompBase.text = competence._base.ToString();
         MyCompRang.text = NomsRangs[competence.rang]; // Utilisation des noms de rangs
         MyCompCost.text = PointsDepense[competence.rang].ToString();
+
+
+        /*
+        var point = PointsDepense[competence.rang];
+        Debug.Log("AAAAAAAAAAAAA ICI "+point);
+        var pointMax = 16;
+
+        DecreaseButtonC.interactable = point != 1;
+
+        if (point < 1)
+        {
+            DecreaseButtonC.interactable = false;
+        }
+        else if (point == pointMax)
+        {
+            IncreaseButtonC.interactable = false;
+        }
+        else
+        {
+            IncreaseButtonC.interactable = true;
+        }*/
     }
 
     public void IncreaseRangC()
