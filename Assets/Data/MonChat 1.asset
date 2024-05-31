@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat 1
   m_EditorClassIdentifier: 
-  nom: ' Ma  Iou'
+  nom: M  Waou
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
   pseudo: 
   portrait: {fileID: 0}
   age: 7
-  race: {fileID: 11400000, guid: 44c21c9b59218c840b30336921c59a21, type: 2}
+  race: {fileID: 11400000, guid: 45973446b0dc4604f9e16902d4711e97, type: 2}
   OnRaceChanged:
     m_PersistentCalls:
       m_Calls: []
-  lignee: "L_Cou Dress\xE9"
+  lignee: L_Ventre Blanc
   OnCatLigneeChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -36,7 +36,7 @@ MonoBehaviour:
   OnPointsDeCreationRestantChanged:
     m_PersistentCalls:
       m_Calls: []
-  pointsDeCompetence: 4
+  pointsDeCompetence: 0
   pointsDeCompetencenRestant: 12
   OnPointsDeCompetenceChanged:
     m_PersistentCalls:
