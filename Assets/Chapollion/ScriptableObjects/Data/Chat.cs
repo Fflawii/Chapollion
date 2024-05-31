@@ -262,7 +262,7 @@ namespace Chapollion.ScriptableObjects.Data
         }
 
 
-        public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int aPointsDeCreation)
+        public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int aPointsDeCreation,List<Talent> defaultTalents)
         {
             Nom = aName;
             pseudo = string.Empty;
@@ -365,19 +365,7 @@ namespace Chapollion.ScriptableObjects.Data
             CalculatePointsDeCompetence();
         }
 
-        private void CalculatePointsRestants()
-        {
-            PointsDeCreationRestant = pointsDeCreation - (Griffre +
-                                                          Poil +
-                                                          Oeil +
-                                                          Queue +
-                                                          Caresse +
-                                                          Ronronnement +
-                                                          Coussinet +
-                                                          Vibrisse +
-                                                          Chance);
-            CalculatePointsDeCompetence();
-        }
+       
 
         public int GetCharacteristique(Charactéristique cara)
         {

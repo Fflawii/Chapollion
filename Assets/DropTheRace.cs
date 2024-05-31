@@ -24,7 +24,7 @@ public class DropTheRace : MonoBehaviour
         listrace = new List<string>();
         foreach (var item in MyLibrary.racesDispo)
         {
-            listrace.Add(item.nom);
+            listrace.Add(item.Nom);
         }
         dropdown.AddOptions(listrace);
         dropdown.onValueChanged.AddListener(OnValueChanged);

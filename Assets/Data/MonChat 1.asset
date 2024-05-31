@@ -1,22 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8299494755325297785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: "T_Contr\xF4le mental"
-  m_EditorClassIdentifier: 
-  nom: "T_Contr\xF4le mental"
-  description: " Le personnage peut contr\xF4ler un \xEAtre humain durant (5 \xD7
-    rang) minutes si ce dernier rate son jet de Caresse."
-  rang: 0
---- !u!114 &-6560425567081276323
+--- !u!114 &-8503502951749337056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,7 +20,7 @@ MonoBehaviour:
   OnBaseChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-5507281312892830560
+--- !u!114 &-8442407956577380609
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,13 +30,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: "T_Arr\xEAt temporel"
+  m_Name: T_Armure
   m_EditorClassIdentifier: 
-  nom: "T_Arr\xEAt temporel"
-  description: " Le personnage peut figer le temps sur une p\xE9riode de (5 \xD7
-    rangs) secondes."
+  nom: T_Armure
+  description: " Le personnage r\xE9duit imm\xE9diatement tous ses niveaux de blessures
+    de (rangs) points durant (5 \xD7 rang) secondes."
   rang: 0
---- !u!114 &-3696367867522283792
+--- !u!114 &-5793844144656679431
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -62,33 +46,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: T_Passe-murail
+  m_Name: T_Hypnose
   m_EditorClassIdentifier: 
-  nom: T_Passe-murail
-  description: "Le personnage peut passer au travers de n\u2019importe quelle mati\xE8re
-    de moins de (10 \xD7 rangs) centim\xE8tres d\u2019\xE9paisseur."
+  nom: T_Hypnose
+  description: "Le personnage peut effacer les (5 \xD7 rangs) derni\xE8res minutes
+    de la m\xE9moire d\u2019un \xEAtre humain, ou bien implanter un faux souvenir
+    remontant \xE0 (rangs) jour(s)."
   rang: 0
---- !u!114 &-3643467818223246430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
-  m_Name: "C_D\xE9guisement"
-  m_EditorClassIdentifier: 
-  nom: "C_D\xE9guisement"
-  _base: 0
-  rang: 0
-  CaracteristiquePrimareCalculBase: 3
-  CaracteristiqueSecondaireCalculBase: 0
-  OnBaseChanged:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &-2832888065867252399
+--- !u!114 &-5437009257710873304
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,15 +63,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: "T_Sixi\xE8me sens"
+  m_Name: "T_Allerg\xE8ne"
   m_EditorClassIdentifier: 
-  nom: "T_Sixi\xE8me sens"
-  description: "La meneuse de jeu informe le joueur d\u2019un danger potentiel et
-    ce dernier peut lui poser (rangs) questions dont les r\xE9ponses sont obligatoirement
-    \xAB\u2009Oui\u2009\xBB ou \xAB\u2009Non\u2009\xBB afin d\u2019en d\xE9terminer
-    la nature."
+  nom: "T_Allerg\xE8ne"
+  description: " Les humains sont affect\xE9s dans un rayon de (5 \xD7 rangs) m\xE8tres 
+    centr\xE9 sur le chat activant son talent. Ils subissent alors un malus  de -(rang)
+    \xE0 toutes leurs actions durant (5 \xD7 rang) minutes. La zone  d\u2019effet
+    se d\xE9place avec le chat durant toute sa dur\xE9e effective."
   rang: 0
---- !u!114 &-1063778451486497352
+--- !u!114 &-3230479305604311380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -126,7 +91,7 @@ MonoBehaviour:
   OnBaseChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-282681199126556252
+--- !u!114 &-1276671963023810768
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,6 +111,26 @@ MonoBehaviour:
   OnBaseChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-669328316378731086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4d1c542a66cd74d98bf0a13cfa132b, type: 3}
+  m_Name: "C_D\xE9guisement"
+  m_EditorClassIdentifier: 
+  nom: "C_D\xE9guisement"
+  _base: 0
+  rang: 0
+  CaracteristiquePrimareCalculBase: 3
+  CaracteristiqueSecondaireCalculBase: 0
+  OnBaseChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat 1
   m_EditorClassIdentifier: 
-  nom: M  Mrr
+  nom: ' Ra  Mrr'
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -166,7 +151,10 @@ MonoBehaviour:
   portrait: {fileID: 0}
   age: 7
   race: {fileID: 0}
-  lignee: "L_Pattes V\xE9loces"
+  OnRaceChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  lignee: "L_Dents Cass\xE9e"
   OnCatLigneeChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -199,22 +187,72 @@ MonoBehaviour:
   vibrisse: 1
   chance: 1
   competences:
-  - {fileID: -1063778451486497352}
-  - {fileID: 919789532301727702}
-  - {fileID: -3643467818223246430}
-  - {fileID: -282681199126556252}
-  - {fileID: -6560425567081276323}
+  - {fileID: -3230479305604311380}
+  - {fileID: 4619588500360480967}
+  - {fileID: -669328316378731086}
+  - {fileID: -1276671963023810768}
+  - {fileID: -8503502951749337056}
   talents:
-  - {fileID: 1306176983538605049}
-  - {fileID: 4452459558355011164}
-  - {fileID: -5507281312892830560}
-  - {fileID: -8299494755325297785}
-  - {fileID: 4803300370211215223}
-  - {fileID: 4288401347845938335}
-  - {fileID: -3696367867522283792}
-  - {fileID: 5510948483212900514}
-  - {fileID: -2832888065867252399}
---- !u!114 &919789532301727702
+  - {fileID: -5437009257710873304}
+  - {fileID: -8442407956577380609}
+  - {fileID: 9006191982024859164}
+  - {fileID: 2184490459262259620}
+  - {fileID: 8593622547287297965}
+  - {fileID: -5793844144656679431}
+  - {fileID: 4026262383033970146}
+  - {fileID: 6890685222515454415}
+  - {fileID: 672320226704535505}
+--- !u!114 &672320226704535505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: "T_Sixi\xE8me sens"
+  m_EditorClassIdentifier: 
+  nom: "T_Sixi\xE8me sens"
+  description: "La meneuse de jeu informe le joueur d\u2019un danger potentiel et
+    ce dernier peut lui poser (rangs) questions dont les r\xE9ponses sont obligatoirement
+    \xAB\u2009Oui\u2009\xBB ou \xAB\u2009Non\u2009\xBB afin d\u2019en d\xE9terminer
+    la nature."
+  rang: 0
+--- !u!114 &2184490459262259620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: "T_Contr\xF4le mental"
+  m_EditorClassIdentifier: 
+  nom: "T_Contr\xF4le mental"
+  description: " Le personnage peut contr\xF4ler un \xEAtre humain durant (5 \xD7
+    rang) minutes si ce dernier rate son jet de Caresse."
+  rang: 0
+--- !u!114 &4026262383033970146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: T_Passe-murail
+  m_EditorClassIdentifier: 
+  nom: T_Passe-murail
+  description: "Le personnage peut passer au travers de n\u2019importe quelle mati\xE8re
+    de moins de (10 \xD7 rangs) centim\xE8tres d\u2019\xE9paisseur."
+  rang: 0
+--- !u!114 &4619588500360480967
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,74 +272,7 @@ MonoBehaviour:
   OnBaseChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1306176983538605049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: "T_Allerg\xE8ne"
-  m_EditorClassIdentifier: 
-  nom: "T_Allerg\xE8ne"
-  description: " Les humains sont affect\xE9s dans un rayon de (5 \xD7 rangs) m\xE8tres 
-    centr\xE9 sur le chat activant son talent. Ils subissent alors un malus  de -(rang)
-    \xE0 toutes leurs actions durant (5 \xD7 rang) minutes. La zone  d\u2019effet
-    se d\xE9place avec le chat durant toute sa dur\xE9e effective."
-  rang: 0
---- !u!114 &4288401347845938335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: T_Hypnose
-  m_EditorClassIdentifier: 
-  nom: T_Hypnose
-  description: "Le personnage peut effacer les (5 \xD7 rangs) derni\xE8res minutes
-    de la m\xE9moire d\u2019un \xEAtre humain, ou bien implanter un faux souvenir
-    remontant \xE0 (rangs) jour(s)."
-  rang: 0
---- !u!114 &4452459558355011164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: T_Armure
-  m_EditorClassIdentifier: 
-  nom: T_Armure
-  description: " Le personnage r\xE9duit imm\xE9diatement tous ses niveaux de blessures
-    de (rangs) points durant (5 \xD7 rang) secondes."
-  rang: 0
---- !u!114 &4803300370211215223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
-  m_Name: T_Force
-  m_EditorClassIdentifier: 
-  nom: T_Force
-  description: "Le personnage ajoute (rangs) point de plus \xE0 son score de Griffe,
-    et \r                   t ce, durant (5 \xD7 rangs) minutes."
-  rang: 0
---- !u!114 &5510948483212900514
+--- !u!114 &6890685222515454415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -318,4 +289,36 @@ MonoBehaviour:
     au rang\u202F1, toutes les heures au rang\u202F2, toutes les\u202F30\u202Fmin
     au rang\u202F3, toutes les\u202F15\u202Fmin au rang\u202F4 et toutes les\u202F5\u202Fmin
     au rang\u202F5."
+  rang: 0
+--- !u!114 &8593622547287297965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: T_Force
+  m_EditorClassIdentifier: 
+  nom: T_Force
+  description: "Le personnage ajoute (rangs) point de plus \xE0 son score de Griffe,
+    et \r                   t ce, durant (5 \xD7 rangs) minutes."
+  rang: 0
+--- !u!114 &9006191982024859164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f209c8d78676ac647b59f51966423756, type: 3}
+  m_Name: "T_Arr\xEAt temporel"
+  m_EditorClassIdentifier: 
+  nom: "T_Arr\xEAt temporel"
+  description: " Le personnage peut figer le temps sur une p\xE9riode de (5 \xD7
+    rangs) secondes."
   rang: 0
