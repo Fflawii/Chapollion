@@ -5,7 +5,7 @@ namespace  Chapollion.ScriptableObjects.Data
 
  public class Qualite:Trait
     {
-        [SerializeField] private string nom;
+        
     }
 
 }

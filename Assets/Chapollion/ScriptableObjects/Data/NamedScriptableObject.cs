@@ -4,7 +4,7 @@ namespace Chapollion.ScriptableObjects.Data
 {
     public abstract class NamedScriptableObject : ScriptableObject
     {
-        [SerializeField] protected string nom;
+        [SerializeField] private string nom;
 
         public string Nom
         {

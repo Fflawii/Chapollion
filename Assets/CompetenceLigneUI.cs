@@ -13,20 +13,26 @@ public class CompetenceLigneUI : MonoBehaviour
     public TMP_Text MyCompRang;
     public TMP_Text MyCompCost;
 
-    public Button IncreaseButton;
-    public Button DecreaseButton;
+    public Button IncreaseButtonC;
+    public Button DecreaseButtonC;
 
     public Competence competence;
-    public Chat chat;  // Référence à l'objet Chat pour mettre à jour les points de compétence restants
+    public Chat chat;  
 
     private static readonly string[] NomsRangs = { "Néophyte", "Amateur", "Connaisseur", "Professionnel", "Expert", "Maître" };
     private static readonly int[] PointsDepense = { 0, 1, 2, 4, 8, 16 };
 
+    private bool listenersAdded = false;
+
     public void Start()
     {
         UpdateUI();
-        IncreaseButton.onClick.AddListener(IncreaseRang);
-        DecreaseButton.onClick.AddListener(DecreaseRang);
+        if (!listenersAdded)
+        {
+        IncreaseButtonC.onClick.AddListener(IncreaseRangC);
+        DecreaseButtonC.onClick.AddListener(DecreaseRangC);
+        listenersAdded = true;
+        }
     }
 
     public void UpdateUI()
@@ -37,7 +43,7 @@ public class CompetenceLigneUI : MonoBehaviour
         MyCompCost.text = PointsDepense[competence.rang].ToString();
     }
 
-    public void IncreaseRang()
+    public void IncreaseRangC()
     {
         if (competence.rang < PointsDepense.Length - 1)
         {
@@ -52,7 +58,7 @@ public class CompetenceLigneUI : MonoBehaviour
         }
     }
 
-    public void DecreaseRang()
+    public void DecreaseRangC()
     {
         if (competence.rang > 0)
         {

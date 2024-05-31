@@ -9,10 +9,6 @@ namespace  Chapollion.ScriptableObjects.Data
     {
         public List<LigneeSuffix> Suffixes=new ();
 
-        public string Nom
-        {
-            get => nom;
-        }
     }
 
     [Serializable]

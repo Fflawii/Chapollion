@@ -268,6 +268,7 @@ namespace Chapollion.ScriptableObjects.Data
 
             Chance = 1;
             CalculatePointsRestants();
+            UpdateCompetenceValues();
 
 #if UNITY_EDITOR
             if (!Application.isPlaying)
@@ -276,6 +277,7 @@ namespace Chapollion.ScriptableObjects.Data
                 {
                     UnityEditor.AssetDatabase.RemoveObjectFromAsset(competence);
                 }
+
 
 
                 competences = new List<Competence>();
@@ -294,8 +296,14 @@ namespace Chapollion.ScriptableObjects.Data
                 // Save all changes to disk
                 UnityEditor.AssetDatabase.SaveAssets();
 
+
+                foreach (var talent in talents)
+                {
+                    UnityEditor.AssetDatabase.RemoveObjectFromAsset(talent);
+                }
+
                 talents = new List<Talent>();
-                UpdateCompetenceValues();
+                
 
 
                 foreach (var talent in defaultTalents)

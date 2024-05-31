@@ -479,11 +479,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyTalTitle: {fileID: 1526799265434195607}
-  MyTalBase: {fileID: 0}
   MyTalRang: {fileID: 2256669900048456537}
   MyTalCost: {fileID: 3074253295187872212}
-  IncreaseButton: {fileID: 1813194832645724658}
-  DecreaseButton: {fileID: 820720910542353062}
+  IncreaseButtonT: {fileID: 1813194832645724658}
+  DecreaseButtonT: {fileID: 820720910542353062}
   talent: {fileID: 11400000, guid: 5c23689a4c4e5824e893268e16b4e801, type: 2}
   chat: {fileID: 11400000, guid: fd0ebd04b67564431a688adf43c7613a, type: 2}
 --- !u!1 &4702199938856456377

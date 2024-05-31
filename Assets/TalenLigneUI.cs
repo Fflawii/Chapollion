@@ -12,8 +12,8 @@ public class TalenLigneUI : MonoBehaviour
     public TMP_Text MyTalRang;
     public TMP_Text MyTalCost;
 
-    public Button IncreaseButton;
-    public Button DecreaseButton;
+    public Button IncreaseButtonT;
+    public Button DecreaseButtonT;
 
    // public Competence competence;
    public Talent talent;
@@ -22,16 +22,22 @@ public class TalenLigneUI : MonoBehaviour
     private static readonly string[] NomsRangs = { "Éveillé", "Disciple", "Pratiquant", "Professeur", "Maître" };
     private static readonly int[] PointsDepense = { 1, 2, 4, 8, 16 };
 
+     private bool listenersAdded = false;
+
     public void Start()
     {
         UpdateUI();
-        IncreaseButton.onClick.AddListener(IncreaseRang);
-        DecreaseButton.onClick.AddListener(DecreaseRang);
+        if (!listenersAdded)
+        {
+        IncreaseButtonT.onClick.AddListener(IncreaseRang);
+        DecreaseButtonT.onClick.AddListener(DecreaseRang);
+        listenersAdded = true;
+        }
     }
 
     public void UpdateUI()
     {
-        MyTalTitle.text = talent.nom;
+        MyTalTitle.text = talent.Nom;
         //MyTalBase.text = talent._base.ToString();
         MyTalRang.text = NomsRangs[talent.rang]; // Utilisation des noms de rangs
         MyTalCost.text = PointsDepense[talent.rang].ToString();
@@ -42,12 +48,12 @@ public class TalenLigneUI : MonoBehaviour
         if (talent.rang < PointsDepense.Length - 1)
         {
             int cost = PointsDepense[talent.rang + 1];
-            if (chat.pointsDeCompetencenRestant >= cost)
+            if (chat.pointsDeTalentRestant >= cost)
             {
-                chat.pointsDeCompetencenRestant -= cost;
+                chat.pointsDeTalentRestant -= cost;
                 talent.rang++;
                 UpdateUI();
-                chat.OnPointsDeCompetenceChanged.Invoke(chat.pointsDeCompetencenRestant);
+                chat.OnPointsDeTalentChanged.Invoke(chat.pointsDeTalentRestant);
             }
         }
     }
@@ -57,10 +63,10 @@ public class TalenLigneUI : MonoBehaviour
         if (talent.rang > 0)
         {
             int cost = PointsDepense[talent.rang];
-            chat.pointsDeCompetencenRestant += cost;
+            chat.pointsDeTalentRestant += cost;
             talent.rang--;
             UpdateUI();
-            chat.OnPointsDeCompetenceChanged.Invoke(chat.pointsDeCompetencenRestant);
+            chat.OnPointsDeTalentChanged.Invoke(chat.pointsDeTalentRestant);
         }
     }
 }

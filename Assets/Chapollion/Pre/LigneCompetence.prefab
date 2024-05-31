@@ -1160,7 +1160,7 @@ MonoBehaviour:
   MyCompBase: {fileID: 2250220271380688876}
   MyCompRang: {fileID: 1698534995548484773}
   MyCompCost: {fileID: 1499025736273053808}
-  IncreaseButton: {fileID: 7391917280947106035}
-  DecreaseButton: {fileID: 5767840922077869899}
-  competence: {fileID: -306662749189839836, guid: fd0ebd04b67564431a688adf43c7613a, type: 2}
+  IncreaseButtonC: {fileID: 7391917280947106035}
+  DecreaseButtonC: {fileID: 5767840922077869899}
+  competence: {fileID: 11400000, guid: 86f182e411ed1204eabdbaa1555a0b76, type: 2}
   chat: {fileID: 11400000, guid: fd0ebd04b67564431a688adf43c7613a, type: 2}
