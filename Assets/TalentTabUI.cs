@@ -12,12 +12,12 @@ public class TalentTabUI : MonoBehaviour
 
     void OnEnable()
     {
-        MonChat.CalculateTalentsPoints(); // Assurez-vous de calculer les compétences avant de les afficher
+        MonChat.CalculateTalentsPoints(); 
         foreach (var comp in MonChat.talents)
         {
             var compUI = Instantiate(MonPrefab, Father);
             compUI.talent = comp;
-            compUI.chat = MonChat;  // Passez la référence du Chat ici
+            compUI.chat = MonChat;  
             compUI.Start();
         }
     }

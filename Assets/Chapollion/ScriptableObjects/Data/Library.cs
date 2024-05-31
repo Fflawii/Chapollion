@@ -41,6 +41,17 @@ namespace  Chapollion.ScriptableObjects.Data
             return defaut;
         }
 
+        public List<Talent> GetDefaultTalentsCopy()
+        {
+            var defaut = new List<Talent>();
+            foreach (var talent in talentsDispo)
+            {
+                defaut.Add(Instantiate(talent));
+            }
+
+            return defaut;
+        }
+
         public string GenerateName()
         {
             return $"{prefixNomDispo[myDice.LaunchD10() - 1]} {suffixNomDispo[myDice.LaunchD10() - 1]}";

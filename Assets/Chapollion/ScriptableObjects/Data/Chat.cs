@@ -15,7 +15,7 @@ namespace Chapollion.ScriptableObjects.Data
 
         [SerializeField] private Sprite portrait;
 
-        [Range(1, 20)] [SerializeField] private int age;
+        [Range(1, 20)][SerializeField] private int age;
         [SerializeField] private Race race;
         [SerializeField] private string lignee;
         public UnityEvent<string> OnCatLigneeChanged = new();
@@ -39,33 +39,42 @@ namespace Chapollion.ScriptableObjects.Data
         [SerializeField] public int pointsDeTalentRestant;
 
         public UnityEvent<int> OnPointsDeTalentChanged = new();
-        
 
-        [Header("Physique")] [Range(1, 5)] [SerializeField]
+
+        [Header("Physique")]
+        [Range(1, 5)]
+        [SerializeField]
         private int griffre = 1;
 
-        [Range(1, 5)] [SerializeField] private int poil = 1;
+        [Range(1, 5)][SerializeField] private int poil = 1;
 
-        [Range(1, 5)] [SerializeField] private int oeil = 1;
+        [Range(1, 5)][SerializeField] private int oeil = 1;
 
-        [Range(1, 5)] [SerializeField] private int queue = 1;
+        [Range(1, 5)][SerializeField] private int queue = 1;
 
-        [Header("Mental")] [Range(1, 5)] [SerializeField]
+        [Header("Mental")]
+        [Range(1, 5)]
+        [SerializeField]
         private int caresse = 1;
 
-        [Range(1, 5)] [SerializeField] private int ronronnement = 1;
+        [Range(1, 5)][SerializeField] private int ronronnement = 1;
 
-        [Range(1, 5)] [SerializeField] private int coussinet = 1;
+        [Range(1, 5)][SerializeField] private int coussinet = 1;
 
-        [Range(1, 5)] [SerializeField] private int vibrisse = 1;
+        [Range(1, 5)][SerializeField] private int vibrisse = 1;
 
-        [Header("Chance")] [Range(1, 3)] [SerializeField]
+        [Header("Chance")]
+        [Range(1, 3)]
+        [SerializeField]
         private int chance = 1;
 
-        [Header("Compétences")] [SerializeField]
+        [Header("Compétences")]
+        [SerializeField]
         public List<Competence> competences = new();
 
-        [Header("Talents")] [SerializeField] public List<Talent> talents = new();
+        [Header("Talents")]
+        [SerializeField]
+        public List<Talent> talents = new();
 
         private static readonly int[] PointsDepense = { 0, 1, 2, 4, 8, 16 };
 
@@ -173,7 +182,7 @@ namespace Chapollion.ScriptableObjects.Data
                 vibrisse = value;
                 CalculatePointsRestants();
                 CalculateTalentsPoints();
-                
+
             }
         }
 
@@ -233,7 +242,7 @@ namespace Chapollion.ScriptableObjects.Data
             }
         }
 
-        public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int aPointsDeCreation)
+        public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int aPointsDeCreation, List<Talent> defaultTalents)
         {
             Nom = aName;
             pseudo = string.Empty;
@@ -261,30 +270,49 @@ namespace Chapollion.ScriptableObjects.Data
             CalculatePointsRestants();
 
 #if UNITY_EDITOR
-            foreach (var competence in competences)
+            if (!Application.isPlaying)
             {
-                UnityEditor.AssetDatabase.RemoveObjectFromAsset(competence);
+                foreach (var competence in competences)
+                {
+                    UnityEditor.AssetDatabase.RemoveObjectFromAsset(competence);
+                }
+
+
+                competences = new List<Competence>();
+
+                foreach (var competence in defaultCompetences)
+                {
+                    var newCompetence = Instantiate(competence);
+                    newCompetence.name = competence.name.Replace("(Clone)", string.Empty);
+                    competences.Add(newCompetence);
+                    newCompetence.OnEnable();
+                    UnityEditor.AssetDatabase.AddObjectToAsset(newCompetence, this);
+                    UnityEditor.EditorUtility.SetDirty(newCompetence);
+                }
+
+                UnityEditor.EditorUtility.SetDirty(this);
+                // Save all changes to disk
+                UnityEditor.AssetDatabase.SaveAssets();
+
+                talents = new List<Talent>();
+                UpdateCompetenceValues();
+
+
+                foreach (var talent in defaultTalents)
+                {
+                    var newTalent = Instantiate(talent);
+                    newTalent.name = talent.name.Replace("(Clone)", string.Empty);
+                    talents.Add(newTalent);
+                    newTalent.OnEnable();
+                    UnityEditor.AssetDatabase.AddObjectToAsset(newTalent, this);
+                    UnityEditor.EditorUtility.SetDirty(newTalent);
+                }
+
+                UnityEditor.EditorUtility.SetDirty(this);
+                // Save all changes to disk
+                UnityEditor.AssetDatabase.SaveAssets();
             }
 #endif
-
-            competences = new List<Competence>();
-#if UNITY_EDITOR
-            foreach (var competence in defaultCompetences)
-            {
-                var newCompetence = Instantiate(competence);
-                newCompetence.name = competence.name.Replace("(Clone)", string.Empty);
-                competences.Add(newCompetence);
-                newCompetence.OnEnable();
-                UnityEditor.AssetDatabase.AddObjectToAsset(newCompetence, this);
-                UnityEditor.EditorUtility.SetDirty(newCompetence);
-            }
-
-            UnityEditor.EditorUtility.SetDirty(this);
-            // Save all changes to disk
-            UnityEditor.AssetDatabase.SaveAssets();
-#endif
-            talents = new List<Talent>();
-            UpdateCompetenceValues();
         }
 
         private void UpdateCompetenceValues()
@@ -389,23 +417,28 @@ namespace Chapollion.ScriptableObjects.Data
 
         public void CalculateTalentsPoints()
         {
-            if (Vibrisse == 1){
+            if (Vibrisse == 1)
+            {
                 pointsDeTalent = 2;
             }
-            if (Vibrisse == 2){
+            if (Vibrisse == 2)
+            {
                 pointsDeTalent = 4;
             }
-            if (Vibrisse == 3){
+            if (Vibrisse == 3)
+            {
                 pointsDeTalent = 8;
             }
-            if (Vibrisse == 4){
+            if (Vibrisse == 4)
+            {
                 pointsDeTalent = 16;
             }
-            if (Vibrisse == 5){
+            if (Vibrisse == 5)
+            {
                 pointsDeTalent = 24;
             }
             //pointsDeTalent = (2* Vibrisse + (Vibrisse - 1)) ;
-            Debug.Log(Vibrisse+" aaaa "+pointsDeTalent );
+            Debug.Log(Vibrisse + " aaaa " + pointsDeTalent);
             OnPointsDeTalentChanged.Invoke(pointsDeTalent);
         }
 

@@ -3,7 +3,7 @@
 namespace Chapollion.ScriptableObjects.Data
 {
     [CreateAssetMenu(fileName="Talent")]
-    public class Talent : ScriptableObject
+    public class Talent : NamedScriptableObject
     {
         [SerializeField] public string nom;
         [SerializeField][TextArea(3, 15)] private string description;

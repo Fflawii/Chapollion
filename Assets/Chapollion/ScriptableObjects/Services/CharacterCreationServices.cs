@@ -21,7 +21,7 @@ namespace  Chapollion.ScriptableObjects.Services
         public void InitCat()
         {
     
-            myCurrentCat.Init(myLibrary.GetDefaultCompetencesCopy(),GenerateName(),GenerateLignee(),_pointsCreationIntialChat);
+            myCurrentCat.Init(myLibrary.GetDefaultCompetencesCopy(),GenerateName(),GenerateLignee(),_pointsCreationIntialChat,myLibrary.GetDefaultTalentsCopy());
         }
 
         private string GenerateLignee()
