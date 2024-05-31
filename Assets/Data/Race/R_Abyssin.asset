@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: R_Abyssin
   m_EditorClassIdentifier: 
   nom: Abyssin
-  ImageRace: {fileID: -1581967770, guid: cbdbe726a1defa24086985fdb3828285, type: 3}
+  ImageRace: {fileID: 1741575186, guid: 43bfa2b184972d548a99ff0ee9ab7a9f, type: 3}
+  MaJolieAnim: {fileID: 9100000, guid: 5ec0439cf572d8a49a1e9530569e1524, type: 2}
   DefautsObligatoires:
   - {fileID: 11400000, guid: 721566206e3b44530a9ec1991e9596c5, type: 2}
   "Qualit\xE9sObligatoires":

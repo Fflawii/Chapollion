@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
@@ -17,6 +17,7 @@ namespace Chapollion.ScriptableObjects.Data
 
         [Range(1, 20)][SerializeField] private int age;
         [SerializeField] private Race race;
+        public UnityEvent<Race> OnRaceChanged = new();
         [SerializeField] private string lignee;
         public UnityEvent<string> OnCatLigneeChanged = new();
 
@@ -238,12 +239,30 @@ namespace Chapollion.ScriptableObjects.Data
             get => race;
             set
             {
+                if (race==value) return;
+               
                 race = value;
-                //CalculatePointsDeCompetence();
+                Qualites = new List<Qualite>();
+                Defauts = new List<Default>();
+                OnRaceChanged.Invoke(race);
+                CalculatePointsDeCompetence();
             }
         }
 
-        public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int aPointsDeCreation, List<Talent> defaultTalents)
+        public List<Qualite> Qualites
+        {
+            get => qualites;
+            set => qualites = value;
+        }
+
+        public List<Default> Defauts
+        {
+            get => defauts;
+            set => defauts = value;
+        }
+
+
+        public void Init(List<Competence> defaultCompetences, string aName, string aLignee, int aPointsDeCreation)
         {
             Nom = aName;
             pseudo = string.Empty;
@@ -253,8 +272,8 @@ namespace Chapollion.ScriptableObjects.Data
             Lignee = aLignee;
             reputation = 0;
             faction = null;
-            qualites = new List<Qualite>();
-            defauts = new List<Default>();
+            Qualites = new List<Qualite>();
+            Defauts = new List<Default>();
             pointsDeCreation = aPointsDeCreation;
             pointsDeCompetence = 0;
             Griffre = 1;
@@ -330,6 +349,20 @@ namespace Chapollion.ScriptableObjects.Data
             {
                 competence.CalulPointDeBase(this);
             }
+        }
+
+        private void CalculatePointsRestants()
+        {
+            PointsDeCreationRestant = pointsDeCreation - (Griffre +
+                                                          Poil +
+                                                          Oeil +
+                                                          Queue +
+                                                          Caresse +
+                                                          Ronronnement +
+                                                          Coussinet +
+                                                          Vibrisse +
+                                                          Chance);
+            CalculatePointsDeCompetence();
         }
 
         private void CalculatePointsRestants()

@@ -1,15 +1,21 @@
 using System.Collections.Generic;
-using System.Linq.Expressions;
+
 using UnityEngine;
+
 
 namespace  Chapollion.ScriptableObjects.Data
 {
     [CreateAssetMenu(fileName="Race")]
     public class Race:NamedScriptableObject
     {
-         public Sprite ImageRace;
+        [SerializeField] public Sprite ImageRace;
         
-        public List<Default> DefautsObligatoires = new();
-        public List<Qualite> QualitésObligatoires = new();
+        Animator animator;
+        [SerializeField] public RuntimeAnimatorController MaJolieAnim;
+
+        [SerializeField] public List<Default> DefautsObligatoires = new();
+        [SerializeField] public List<Qualite> QualitésObligatoires = new();
+
+ 
     }
 }

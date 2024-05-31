@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b918bace097e92a4cbe23174e65c4253, type: 3}
-  m_Name: "R_Europ\xE9en"
+  m_Name: "R_Europe\u0301en"
   m_EditorClassIdentifier: 
   nom: "Europ\xE9en"
-  ImageRace: {fileID: 1793886685, guid: 39bc1aaa13d055647933e61902b43f48, type: 3}
+  ImageRace: {fileID: -926048052, guid: 18e6d971025d9054d8abb92dac9d0c13, type: 3}
+  MaJolieAnim: {fileID: 9100000, guid: 5f1ba5e506096ec47b10239f6e7cc176, type: 2}
   DefautsObligatoires: []
   "Qualit\xE9sObligatoires":
   - {fileID: 11400000, guid: 6ec7d579277b01044868e0dfcc05f6b0, type: 2}

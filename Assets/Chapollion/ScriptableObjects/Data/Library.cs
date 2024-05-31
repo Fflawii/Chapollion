@@ -7,14 +7,14 @@ namespace  Chapollion.ScriptableObjects.Data
      [CreateAssetMenu(fileName = "Game Library", menuName = "Create Game Library", order = 0)]
    public class Library : ScriptableObject
     {
-        [SerializeField] private DiceResultsService myDice;
+         [SerializeField] private DiceResultsService myDice;
 
         [SerializeField] private List<string> prefixNomDispo = new();
         [SerializeField] private List<string> suffixNomDispo = new();
       
         [SerializeField] private List<Lignee> lignees = new();
      
-        [SerializeField] private List<Faction> factionsDispo = new();
+        [SerializeField] public List<Faction> factionsDispo = new();
 
         [SerializeField] private List<Qualite> qualitesDispo = new();
         [SerializeField] private List<Default> defautsDispo = new();
@@ -23,13 +23,26 @@ namespace  Chapollion.ScriptableObjects.Data
         [SerializeField] private List<Talent> talentsDispo = new();
 
 
-        [SerializeField] private List<Race> racesDispo = new();
+        [SerializeField] public List<Race> racesDispo = new();
 
-        public List<Race> RacesDispo
+         public List<Race> RacesDispo
         {
             get => racesDispo;
             set => racesDispo = value;
         }
+
+        public List<Qualite> QualitesDispo
+        {
+            get => qualitesDispo;
+            set => qualitesDispo = value;
+        }
+
+        public List<Default> DefautsDispo
+        {
+            get => defautsDispo;
+            set => defautsDispo = value;
+        }
+
         public List<Competence> GetDefaultCompetencesCopy()
         {
             var defaut = new List<Competence>();
