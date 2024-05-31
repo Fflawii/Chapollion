@@ -28,6 +28,7 @@ namespace Chapollion.ScriptableObjects.Data
         Caresse = 5,
         Ronronnement = 6,
         Coussinet = 7,
-        Vibrisse = 8
+        Vibrisse = 8,
+        Chance = 9
     }
 }

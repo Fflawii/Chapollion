@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4254028c9c4dac41ba3eec8c61f9368, type: 3}
   m_Name: MonChat 1
   m_EditorClassIdentifier: 
-  nom: ' Meou  Waou'
+  nom: ' Wra  Iou'
   OnCatNameChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -20,12 +20,27 @@ MonoBehaviour:
   portrait: {fileID: 0}
   age: 7
   race: {fileID: 0}
-  lignee: Ventre A Terre
+  OnRaceChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  lignee: L_Tete Ronde
+  OnCatLigneeChanged:
+    m_PersistentCalls:
+      m_Calls: []
   reputation: 0
   faction: {fileID: 0}
   qualites: []
   defauts: []
-  pointsDeCreationRestant: 0
+  pointsDeCreation: 0
+  pointsDeCreationRestant: -9
+  OnPointsDeCreationRestantChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  pointsDeCompetence: 6
+  pointsDeCompetencenRestant: 12
+  OnPointsDeCompetenceChanged:
+    m_PersistentCalls:
+      m_Calls: []
   griffre: 1
   poil: 1
   oeil: 1

@@ -7,7 +7,7 @@ namespace  Chapollion.ScriptableObjects.Data
      [CreateAssetMenu(fileName = "Game Library", menuName = "Create Game Library", order = 0)]
    public class Library : ScriptableObject
     {
-        [SerializeField] private DiceResultsService myDice;
+         [SerializeField] private DiceResultsService myDice;
 
         [SerializeField] private List<string> prefixNomDispo = new();
         [SerializeField] private List<string> suffixNomDispo = new();
@@ -24,6 +24,25 @@ namespace  Chapollion.ScriptableObjects.Data
 
 
         [SerializeField] public List<Race> racesDispo = new();
+
+         public List<Race> RacesDispo
+        {
+            get => racesDispo;
+            set => racesDispo = value;
+        }
+
+        public List<Qualite> QualitesDispo
+        {
+            get => qualitesDispo;
+            set => qualitesDispo = value;
+        }
+
+        public List<Default> DefautsDispo
+        {
+            get => defautsDispo;
+            set => defautsDispo = value;
+        }
+
         public List<Competence> GetDefaultCompetencesCopy()
         {
             var defaut = new List<Competence>();
